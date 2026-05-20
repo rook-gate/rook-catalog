@@ -1,28 +1,21 @@
-import {useState} from 'react';
-import logo from './assets/images/logo-universal.png';
-import './App.css';
-import {Greet} from "../wailsjs/go/main/App";
+import { useState } from "react";
+import data from "./assets/mockData.json"; 
+import "./App.css";
+import Sidebar from "./Componnets/Sidebar";
 
 function App() {
-    const [resultText, setResultText] = useState("Please enter your name below 👇");
-    const [name, setName] = useState('');
-    const updateName = (e) => setName(e.target.value);
-    const updateResultText = (result) => setResultText(result);
+  const [activeCategory, setActiveCategory] = useState("developer-tools");
+  const [loadingApp, setLoadingApp] = useState(null);
 
-    function greet() {
-        Greet(name).then(updateResultText);
-    }
+  return (
+    <div className="min-h-screen bg-white flex">
+      
+      {/* Sidebar */}
+      <Sidebar activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
 
-    return (
-        <div id="App">
-            <img src={logo} id="logo" alt="logo"/>
-            <div id="result" className="result">{resultText}</div>
-            <div id="input" className="input-box">
-                <input id="name" className="input" onChange={updateName} autoComplete="off" name="input" type="text"/>
-                <button className="btn" onClick={greet}>Greet</button>
-            </div>
-        </div>
-    )
+     
+    </div>
+  );
 }
 
-export default App
+export default App;

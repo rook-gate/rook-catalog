@@ -1,0 +1,273 @@
+{
+  "version": "1.0.0",
+
+  "categories": [
+    {
+      "id": "developer-tools",
+      "label": "Developer Tools",
+      "apps": ["vscode", "git", "nodejs", "docker", "postman"]
+    },
+    {
+      "id": "browsers",
+      "label": "Browsers",
+      "apps": ["chrome", "firefox", "edge", "brave", "opera"]
+    },
+    {
+      "id": "productivity",
+      "label": "Productivity",
+      "apps": ["notion", "obsidian", "libreoffice", "evernote", "trello"]
+    },
+    {
+      "id": "gaming",
+      "label": "Gaming",
+      "apps": ["steam", "epicgames", "gog", "battle.net", "discord"]
+    },
+    {
+      "id": "communication",
+      "label": "Communication",
+      "apps": ["discord", "zoom", "slack", "teams", "skype"]
+    }
+  ],
+
+  "apps": {
+    "vscode": {
+      "name": "Visual Studio Code",
+      "wingetId": "Microsoft.VisualStudioCode",
+      "category": "developer-tools",
+      "publisher": "Microsoft",
+      "homepage": "https://code.visualstudio.com",
+      "description": "Lightweight but powerful source code editor.",
+      "tags": ["editor", "dev"]
+    },
+
+    "git": {
+      "name": "Git",
+      "wingetId": "Git.Git",
+      "category": "developer-tools",
+      "publisher": "Git SCM",
+      "homepage": "https://git-scm.com",
+      "description": "Version control system for tracking code changes.",
+      "tags": ["vcs", "dev"]
+    },
+
+    "nodejs": {
+      "name": "Node.js",
+      "wingetId": "OpenJS.NodeJS",
+      "category": "developer-tools",
+      "publisher": "OpenJS Foundation",
+      "homepage": "https://nodejs.org",
+      "description": "JavaScript runtime environment.",
+      "tags": ["runtime", "js"]
+    },
+
+    "docker": {
+      "name": "Docker Desktop",
+      "wingetId": "Docker.DockerDesktop",
+      "category": "developer-tools",
+      "publisher": "Docker",
+      "homepage": "https://www.docker.com",
+      "description": "Container platform for developers.",
+      "tags": ["containers"]
+    },
+
+    "postman": {
+      "name": "Postman",
+      "wingetId": "Postman.Postman",
+      "category": "developer-tools",
+      "publisher": "Postman Inc.",
+      "homepage": "https://www.postman.com",
+      "description": "API testing tool.",
+      "tags": ["api"]
+    },
+
+    "chrome": {
+      "name": "Google Chrome",
+      "wingetId": "Google.Chrome",
+      "category": "browsers",
+      "publisher": "Google",
+      "homepage": "https://www.google.com/chrome/",
+      "description": "Fast web browser.",
+      "tags": ["browser"]
+    },
+
+    "firefox": {
+      "name": "Mozilla Firefox",
+      "wingetId": "Mozilla.Firefox",
+      "category": "browsers",
+      "publisher": "Mozilla",
+      "homepage": "https://www.mozilla.org/firefox/",
+      "description": "Privacy-focused browser.",
+      "tags": ["browser", "privacy"]
+    },
+
+    "edge": {
+      "name": "Microsoft Edge",
+      "wingetId": "Microsoft.Edge",
+      "category": "browsers",
+      "publisher": "Microsoft",
+      "homepage": "https://www.microsoft.com/edge",
+      "description": "Chromium-based browser.",
+      "tags": ["browser"]
+    },
+
+    "brave": {
+      "name": "Brave",
+      "wingetId": "Brave.Brave",
+      "category": "browsers",
+      "publisher": "Brave Software",
+      "homepage": "https://brave.com",
+      "description": "Privacy-first browser.",
+      "tags": ["browser", "privacy"]
+    },
+
+    "opera": {
+      "name": "Opera",
+      "wingetId": "Opera.Opera",
+      "category": "browsers",
+      "publisher": "Opera Software",
+      "homepage": "https://www.opera.com",
+      "description": "Feature-rich browser.",
+      "tags": ["browser"]
+    },
+
+    "notion": {
+      "name": "Notion",
+      "wingetId": "Notion.Notion",
+      "category": "productivity",
+      "publisher": "Notion Labs",
+      "homepage": "https://www.notion.so",
+      "description": "All-in-one workspace.",
+      "tags": ["notes"]
+    },
+
+    "obsidian": {
+      "name": "Obsidian",
+      "wingetId": "Obsidian.Obsidian",
+      "category": "productivity",
+      "publisher": "Obsidian",
+      "homepage": "https://obsidian.md",
+      "description": "Knowledge base app.",
+      "tags": ["notes"]
+    },
+
+    "libreoffice": {
+      "name": "LibreOffice",
+      "wingetId": "TheDocumentFoundation.LibreOffice",
+      "category": "productivity",
+      "publisher": "Document Foundation",
+      "homepage": "https://www.libreoffice.org",
+      "description": "Office suite.",
+      "tags": ["office"]
+    },
+
+    "evernote": {
+      "name": "Evernote",
+      "wingetId": "Evernote.Evernote",
+      "category": "productivity",
+      "publisher": "Evernote",
+      "homepage": "https://evernote.com",
+      "description": "Note-taking app.",
+      "tags": ["notes"]
+    },
+
+    "trello": {
+      "name": "Trello",
+      "wingetId": "Trello.Trello",
+      "category": "productivity",
+      "publisher": "Atlassian",
+      "homepage": "https://trello.com",
+      "description": "Task management tool.",
+      "tags": ["tasks"]
+    },
+
+    "steam": {
+      "name": "Steam",
+      "wingetId": "Valve.Steam",
+      "category": "gaming",
+      "publisher": "Valve",
+      "homepage": "https://store.steampowered.com",
+      "description": "PC gaming platform.",
+      "tags": ["games"]
+    },
+
+    "epicgames": {
+      "name": "Epic Games Launcher",
+      "wingetId": "EpicGames.EpicGamesLauncher",
+      "category": "gaming",
+      "publisher": "Epic Games",
+      "homepage": "https://www.epicgames.com",
+      "description": "Game launcher.",
+      "tags": ["games"]
+    },
+
+    "gog": {
+      "name": "GOG Galaxy",
+      "wingetId": "GOG.Galaxy",
+      "category": "gaming",
+      "publisher": "CD Projekt",
+      "homepage": "https://www.gog.com",
+      "description": "Game library manager.",
+      "tags": ["games"]
+    },
+
+    "battle.net": {
+      "name": "Battle.net",
+      "wingetId": "Blizzard.BattleNet",
+      "category": "gaming",
+      "publisher": "Blizzard",
+      "homepage": "https://battle.net",
+      "description": "Blizzard games launcher.",
+      "tags": ["games"]
+    },
+
+    "discord": {
+      "name": "Discord",
+      "wingetId": "Discord.Discord",
+      "category": "communication",
+      "publisher": "Discord Inc.",
+      "homepage": "https://discord.com",
+      "description": "Chat and voice platform.",
+      "tags": ["chat"]
+    },
+
+    "zoom": {
+      "name": "Zoom",
+      "wingetId": "Zoom.Zoom",
+      "category": "communication",
+      "publisher": "Zoom",
+      "homepage": "https://zoom.us",
+      "description": "Video meetings platform.",
+      "tags": ["meetings"]
+    },
+
+    "slack": {
+      "name": "Slack",
+      "wingetId": "SlackTechnologies.Slack",
+      "category": "communication",
+      "publisher": "Slack",
+      "homepage": "https://slack.com",
+      "description": "Team chat app.",
+      "tags": ["chat"]
+    },
+
+    "teams": {
+      "name": "Microsoft Teams",
+      "wingetId": "Microsoft.Teams",
+      "category": "communication",
+      "publisher": "Microsoft",
+      "homepage": "https://www.microsoft.com/teams",
+      "description": "Collaboration tool.",
+      "tags": ["meetings"]
+    },
+
+    "skype": {
+      "name": "Skype",
+      "wingetId": "Microsoft.Skype",
+      "category": "communication",
+      "publisher": "Microsoft",
+      "homepage": "https://www.skype.com",
+      "description": "Calling app.",
+      "tags": ["calls"]
+    }
+  }
+}
