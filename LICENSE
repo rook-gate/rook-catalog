@@ -1,21 +1,22 @@
-MIT License
+Proprietary Software License Agreement
+Copyright (c) 2026 Rook-Gate. All rights reserved.
 
-Copyright (c) 2026 Rook Labs
+1. Ownership and Intellectual Property
+This software and all associated documentation (the "Software") are the sole and exclusive property of Rook-Gate. This Software is protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+2. License Restrictions (Non-Open Source)
+This Software is strictly proprietary and is NOT open-source software. You are explicitly prohibited from doing any of the following without prior written authorization from Rook-Gate:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+No Distribution: You may not sell, rent, lease, lend, redistribute, sublicense, or otherwise transfer the Software to any third party.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+No Modification: You may not modify, decompile, disassemble, reverse engineer, or create derivative works based on the Software.
+
+No Unauthorized Copying: You may not copy or duplicate the Software, in whole or in part, except for standard backup or archival purposes as expressly permitted by Rook-Gate.
+
+3. Termination
+Any breach of this Agreement immediately terminates your right to use the Software. Upon termination, you must destroy all copies of the Software in your possession.
+
+4. Disclaimer of Warranty
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Note: If you plan to distribute this commercially or need specific enforcement mechanisms (like governing law/jurisdiction), it is always a good idea to have a legal professional review your final End User License Agreement (EULA).
