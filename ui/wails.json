@@ -1,7 +1,7 @@
 {
   "$schema": "https://wails.io/schemas/config.v2.json",
-  "name": "ui",
-  "outputfilename": "ui",
+  "name": "Rook Catalog",
+  "outputfilename": "rook-catalog",
   "frontend:install": "npm install",
   "frontend:build": "npm run build",
   "frontend:dev:watcher": "npm run dev",

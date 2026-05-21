@@ -29,8 +29,9 @@
     }
   ],
 
-  "apps": {
-    "vscode": {
+  "apps": [
+    {
+      "id": "vscode",
       "name": "Visual Studio Code",
       "wingetId": "Microsoft.VisualStudioCode",
       "category": "developer-tools",
@@ -39,8 +40,8 @@
       "description": "Lightweight but powerful source code editor.",
       "tags": ["editor", "dev"]
     },
-
-    "git": {
+    {
+      "id": "git",
       "name": "Git",
       "wingetId": "Git.Git",
       "category": "developer-tools",
@@ -49,8 +50,8 @@
       "description": "Version control system for tracking code changes.",
       "tags": ["vcs", "dev"]
     },
-
-    "nodejs": {
+    {
+      "id": "nodejs",
       "name": "Node.js",
       "wingetId": "OpenJS.NodeJS",
       "category": "developer-tools",
@@ -59,8 +60,8 @@
       "description": "JavaScript runtime environment.",
       "tags": ["runtime", "js"]
     },
-
-    "docker": {
+    {
+      "id": "docker",
       "name": "Docker Desktop",
       "wingetId": "Docker.DockerDesktop",
       "category": "developer-tools",
@@ -69,8 +70,8 @@
       "description": "Container platform for developers.",
       "tags": ["containers"]
     },
-
-    "postman": {
+    {
+      "id": "postman",
       "name": "Postman",
       "wingetId": "Postman.Postman",
       "category": "developer-tools",
@@ -79,8 +80,8 @@
       "description": "API testing tool.",
       "tags": ["api"]
     },
-
-    "chrome": {
+    {
+      "id": "chrome",
       "name": "Google Chrome",
       "wingetId": "Google.Chrome",
       "category": "browsers",
@@ -89,8 +90,8 @@
       "description": "Fast web browser.",
       "tags": ["browser"]
     },
-
-    "firefox": {
+    {
+      "id": "firefox",
       "name": "Mozilla Firefox",
       "wingetId": "Mozilla.Firefox",
       "category": "browsers",
@@ -99,8 +100,8 @@
       "description": "Privacy-focused browser.",
       "tags": ["browser", "privacy"]
     },
-
-    "edge": {
+    {
+      "id": "edge",
       "name": "Microsoft Edge",
       "wingetId": "Microsoft.Edge",
       "category": "browsers",
@@ -109,8 +110,8 @@
       "description": "Chromium-based browser.",
       "tags": ["browser"]
     },
-
-    "brave": {
+    {
+      "id": "brave",
       "name": "Brave",
       "wingetId": "Brave.Brave",
       "category": "browsers",
@@ -119,8 +120,8 @@
       "description": "Privacy-first browser.",
       "tags": ["browser", "privacy"]
     },
-
-    "opera": {
+    {
+      "id": "opera",
       "name": "Opera",
       "wingetId": "Opera.Opera",
       "category": "browsers",
@@ -129,8 +130,8 @@
       "description": "Feature-rich browser.",
       "tags": ["browser"]
     },
-
-    "notion": {
+    {
+      "id": "notion",
       "name": "Notion",
       "wingetId": "Notion.Notion",
       "category": "productivity",
@@ -139,8 +140,8 @@
       "description": "All-in-one workspace.",
       "tags": ["notes"]
     },
-
-    "obsidian": {
+    {
+      "id": "obsidian",
       "name": "Obsidian",
       "wingetId": "Obsidian.Obsidian",
       "category": "productivity",
@@ -149,8 +150,8 @@
       "description": "Knowledge base app.",
       "tags": ["notes"]
     },
-
-    "libreoffice": {
+    {
+      "id": "libreoffice",
       "name": "LibreOffice",
       "wingetId": "TheDocumentFoundation.LibreOffice",
       "category": "productivity",
@@ -159,8 +160,8 @@
       "description": "Office suite.",
       "tags": ["office"]
     },
-
-    "evernote": {
+    {
+      "id": "evernote",
       "name": "Evernote",
       "wingetId": "Evernote.Evernote",
       "category": "productivity",
@@ -169,8 +170,8 @@
       "description": "Note-taking app.",
       "tags": ["notes"]
     },
-
-    "trello": {
+    {
+      "id": "trello",
       "name": "Trello",
       "wingetId": "Trello.Trello",
       "category": "productivity",
@@ -179,8 +180,8 @@
       "description": "Task management tool.",
       "tags": ["tasks"]
     },
-
-    "steam": {
+    {
+      "id": "steam",
       "name": "Steam",
       "wingetId": "Valve.Steam",
       "category": "gaming",
@@ -189,8 +190,8 @@
       "description": "PC gaming platform.",
       "tags": ["games"]
     },
-
-    "epicgames": {
+    {
+      "id": "epicgames",
       "name": "Epic Games Launcher",
       "wingetId": "EpicGames.EpicGamesLauncher",
       "category": "gaming",
@@ -199,8 +200,8 @@
       "description": "Game launcher.",
       "tags": ["games"]
     },
-
-    "gog": {
+    {
+      "id": "gog",
       "name": "GOG Galaxy",
       "wingetId": "GOG.Galaxy",
       "category": "gaming",
@@ -209,8 +210,8 @@
       "description": "Game library manager.",
       "tags": ["games"]
     },
-
-    "battle.net": {
+    {
+      "id": "battle.net",
       "name": "Battle.net",
       "wingetId": "Blizzard.BattleNet",
       "category": "gaming",
@@ -219,8 +220,8 @@
       "description": "Blizzard games launcher.",
       "tags": ["games"]
     },
-
-    "discord": {
+    {
+      "id": "discord",
       "name": "Discord",
       "wingetId": "Discord.Discord",
       "category": "communication",
@@ -229,8 +230,8 @@
       "description": "Chat and voice platform.",
       "tags": ["chat"]
     },
-
-    "zoom": {
+    {
+      "id": "zoom",
       "name": "Zoom",
       "wingetId": "Zoom.Zoom",
       "category": "communication",
@@ -239,8 +240,8 @@
       "description": "Video meetings platform.",
       "tags": ["meetings"]
     },
-
-    "slack": {
+    {
+      "id": "slack",
       "name": "Slack",
       "wingetId": "SlackTechnologies.Slack",
       "category": "communication",
@@ -249,8 +250,8 @@
       "description": "Team chat app.",
       "tags": ["chat"]
     },
-
-    "teams": {
+    {
+      "id": "teams",
       "name": "Microsoft Teams",
       "wingetId": "Microsoft.Teams",
       "category": "communication",
@@ -259,8 +260,8 @@
       "description": "Collaboration tool.",
       "tags": ["meetings"]
     },
-
-    "skype": {
+    {
+      "id": "skype",
       "name": "Skype",
       "wingetId": "Microsoft.Skype",
       "category": "communication",
@@ -269,5 +270,5 @@
       "description": "Calling app.",
       "tags": ["calls"]
     }
-  }
+  ]
 }

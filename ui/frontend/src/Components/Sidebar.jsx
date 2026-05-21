@@ -7,10 +7,12 @@ import {
   Globe,
   MessageCircle,
 } from "lucide-react";
+import { useCatalogStore } from "../stores/useCatalogStore";
 
-function Sidebar({ activeCategory, setActiveCategory }) {
-  console.log("DATA:", data);
-  console.log("CATEGORIES:", data?.categories);
+function Sidebar() {
+   const activeCategory = useCatalogStore((s) => s.activeCategory)
+  const setActiveCategory = useCatalogStore((s) => s.setActiveCategory);
+
   console.log("Active Category:", activeCategory);
 
   const categoryIcons = {
@@ -32,9 +34,9 @@ function Sidebar({ activeCategory, setActiveCategory }) {
 
   return (
     <>
-      <div className="w-56 gap-0.5 px-2 py-3 select-none  bg-gray-100 border-r-0 border-zinc-800 shadow-[4px_0_12px_rgba(0,0,0,0.25)]">
+      <div className="w-56 gap-0.5 px-2 py-3 select-none bg-[#fafafa]  border-r border-zinc-200/80 shadow-[4px_0_12px_rgba(0,0,0,0.25)]">
         {data?.categories.map((cat) => {
-          const { accent, bg } = CAT_COLORS[activeCategory] || DEFAULT_COLOR;
+          const { accent, bg } = CAT_COLORS[cat.id] || DEFAULT_COLOR;
           const isActive = activeCategory === cat.id;
           return (
             <div
@@ -43,7 +45,7 @@ function Sidebar({ activeCategory, setActiveCategory }) {
               className="cursor-pointer rounded-xl transition-all duration-200"
             >
               <span
-                className="flex items-center gap-3 px-3 py-2.5 w-full rounded-xl text-sm "
+                className="flex items-center gap-3 px-3 py-2.5  w-full rounded-xl text-sm "
                 style={{
                   color: isActive ? accent : "#52525b",
                   backgroundColor: isActive ? bg : "transparent",
