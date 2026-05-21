@@ -3,7 +3,7 @@
 
   "categories": [
     {
-      "id": "developer-tools",
+      "id": "developer tools",
       "label": "Developer Tools",
       "apps": ["vscode", "git", "nodejs", "docker", "postman"]
     },
@@ -34,7 +34,7 @@
       "id": "vscode",
       "name": "Visual Studio Code",
       "wingetId": "Microsoft.VisualStudioCode",
-      "category": "developer-tools",
+      "category": "developer tools",
       "publisher": "Microsoft",
       "homepage": "https://code.visualstudio.com",
       "description": "Lightweight but powerful source code editor.",
@@ -44,7 +44,7 @@
       "id": "git",
       "name": "Git",
       "wingetId": "Git.Git",
-      "category": "developer-tools",
+      "category": "developer tools",
       "publisher": "Git SCM",
       "homepage": "https://git-scm.com",
       "description": "Version control system for tracking code changes.",
@@ -54,7 +54,7 @@
       "id": "nodejs",
       "name": "Node.js",
       "wingetId": "OpenJS.NodeJS",
-      "category": "developer-tools",
+      "category": "developer tools",
       "publisher": "OpenJS Foundation",
       "homepage": "https://nodejs.org",
       "description": "JavaScript runtime environment.",
@@ -64,7 +64,7 @@
       "id": "docker",
       "name": "Docker Desktop",
       "wingetId": "Docker.DockerDesktop",
-      "category": "developer-tools",
+      "category": "developer tools",
       "publisher": "Docker",
       "homepage": "https://www.docker.com",
       "description": "Container platform for developers.",
@@ -74,7 +74,7 @@
       "id": "postman",
       "name": "Postman",
       "wingetId": "Postman.Postman",
-      "category": "developer-tools",
+      "category": "developer tools",
       "publisher": "Postman Inc.",
       "homepage": "https://www.postman.com",
       "description": "API testing tool.",

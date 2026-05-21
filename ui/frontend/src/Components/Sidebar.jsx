@@ -8,29 +8,23 @@ import {
   MessageCircle,
 } from "lucide-react";
 import { useCatalogStore } from "../stores/useCatalogStore";
+import { CAT_COLORS, DEFAULT_COLOR } from "../stores/catColor";
 
 function Sidebar() {
-   const activeCategory = useCatalogStore((s) => s.activeCategory)
+  const activeCategory = useCatalogStore((s) => s.activeCategory);
   const setActiveCategory = useCatalogStore((s) => s.setActiveCategory);
 
   console.log("Active Category:", activeCategory);
 
   const categoryIcons = {
-    "developer-tools": <Code size={18} />,
+    "developer tools": <Code size={18} />,
     browsers: <Globe size={18} />,
     gaming: <Gamepad2 size={18} />,
     productivity: <BriefcaseBusiness size={18} />,
     communication: <MessageCircle size={18} />,
   };
-  const CAT_COLORS = {
-    "developer-tools": { accent: "#2563eb", bg: "#cfe0ff", },
-    browsers: { accent: "#d97706", bg: "#ffd9bd"},
-    gaming: { accent: "#0e7490", bg: "#c9f2ff"},
-    productivity: {accent: "#15803d",bg: "#c8f7d8",},
-    communication: { accent: "#6d28d9", bg: "#e4d5ff"},
-  };
   
-  const DEFAULT_COLOR = { accent: "#888", bg: "#1a1a1a" };
+  
 
   return (
     <>
