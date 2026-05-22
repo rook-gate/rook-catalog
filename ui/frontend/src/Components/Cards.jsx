@@ -2,17 +2,45 @@ import React from "react";
 import data from "../assets/mockData.json";
 import { CAT_COLORS, DEFAULT_COLOR } from "../stores/catColor";
 import { useState } from "react";
-
+import { InstallApp } from "../../wailsjs/go/main/App";
+import { IsInstalled } from "../../wailsjs/go/main/App";
+import { useEffect } from "react";
 
 export default function Cards({ app }) {
   const domain = app?.homepage ? new URL(app.homepage).hostname : null;
   const iconUrl = domain ? `https://icon.horse/icon/${domain}` : null;
   const [hover, setHover] = useState(false);
+  const [installing, setInstalling] = useState(false);
+  const [installed, setInstalled] = useState(false);
   const color = CAT_COLORS[app.category] || DEFAULT_COLOR;
+
+  const handleInstall = async () => {
+    try {
+      setInstalling(true);
+      await InstallApp(app.wingetId);
+    } catch (err) {
+      console.log("Error:", err);
+    } finally {
+      setInstalling(false);
+    }
+  };
+
+  useEffect(() => {
+    const check = async () => {
+      try {
+        const res = await IsInstalled(app.wingetId);
+        setInstalled(res);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+
+    check();
+  }, [app.wingetId]);
 
   return (
     <div
-      className="bg-white rounded-2xl p-4 w-56 h-48 flex flex-col gap-3 shadow-[0_1px_3px_rgba(0,0,0,0.06),0_4px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-200 cursor-pointer"
+      className="bg-white rounded-2xl p-4 w-56 h-48 flex flex-col gap-3 shadow-[0_1px_3px_rgba(0,0,0,0.06),0_4px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-200 cursor-pointer hover:-translate-y-1 "
       style={{ borderTop: `3px solid ${color.bg}` }}
     >
       {/* TOP ROW: icon + name */}
@@ -33,29 +61,27 @@ export default function Cards({ app }) {
           <p className="text-[#18181b] text-sm font-semibold leading-tight truncate">
             {app?.name}
           </p>
-          <p className="text-xs text-gray-400 truncate">
-            by {app.publisher}
-          </p>
+          <p className="text-xs text-gray-400 truncate">by {app.publisher}</p>
         </div>
       </div>
 
       {/* Description */}
-      <p className="text-[#a1a1aa] text-xs line-clamp-3">
-        {app?.description}
-      </p>
+      <p className="text-[#a1a1aa] text-xs line-clamp-3">{app?.description}</p>
 
       {/* Button */}
       <button
+        disabled={installing}
+        onClick={handleInstall}
         onMouseEnter={() => setHover(true)}
-          onMouseLeave={() => setHover(false)}
-        className="mt-auto  text-xs font-medium px-3 py-1.5 rounded-lg transition-all duration-150"
+        onMouseLeave={() => setHover(false)}
+        className="mt-auto cursor-pointer  text-xs font-medium px-3 py-1.5 rounded-lg transition-all duration-150"
         style={{
           background: hover ? color.accent : color.bg,
           color: hover ? "#fff" : color.accent,
           border: `1px solid ${color.accent}33`,
         }}
       >
-        Install
+        {installing ? "Installing" : "Install"}
       </button>
     </div>
   );

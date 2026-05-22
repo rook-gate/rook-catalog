@@ -4,6 +4,7 @@ import {
   WindowToggleMaximise,
   Quit,
 } from "../../wailsjs/runtime/runtime";
+import icon from "../assets/appicon.png";
 
 function Navbar() {
   return (
@@ -15,7 +16,8 @@ function Navbar() {
         style={{ "--wails-draggable": "no-drag" }}
         className="flex items-center"
       >
-        <div className="relative">
+        <div className="flex item-center gap-1">
+          <img src={icon} className="w-8 h-8 " />
           <h1 className="text-[15px] font-semibold tracking-tight text-[#18181b] flex items-center gap-2">
             Rook
             <span className="text-[11px] font-medium text-[#71717a] bg-[#f0f0f0] border border-[#e4e4e7] px-2 py-0.5 rounded-md tracking-wide">

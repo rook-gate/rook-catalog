@@ -16,7 +16,7 @@ function Items() {
   console.log("filtered:", filteredApps);
   return (
     <>
-      <div className="px-6 underline pb-2">
+      <div className="px-6 underline -mt-4 pl-6 select-none">
         <h1 className="text-xs font-semibold uppercase tracking-widest text-zinc-400">
           {activeCategory}
         </h1>
