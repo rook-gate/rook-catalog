@@ -21,7 +21,7 @@ function App() {
       <Navbar />
       <div className="flex flex-1 overflow-hidden overflow-y-auto no-scrollbar ">
         <Sidebar />
-        <div className="flex-1 overflow-y-auto bg-white no-scrollbar overflow-y-auto">
+        <div className="flex-1 bg-white no-scrollbar overflow-y-auto">
           <div className="relative min-h-full p-8">
             <GridPattern
               width={32}

@@ -30,7 +30,7 @@ function Sidebar() {
   const isHome = activeCategory === "home";
   return (
     <>
-      <div className="w-56 gap-0.5 px-2 py-3 select-none bg-[#fafafa]  border-r border-zinc-200/80 shadow-[4px_0_12px_rgba(0,0,0,0.25)]">
+      <div className="w-56 gap-0.5 px-2 py-3 select-none bg-[#fafafa]  border-r border-zinc-200/80 shadow-[4px_0_12px_rgba(0,0,0,0.25)] font-semibold">
         <div
           onClick={() => setActiveCategory("home")}
           className="cursor-pointer rounded-xl transition-all duration-200"

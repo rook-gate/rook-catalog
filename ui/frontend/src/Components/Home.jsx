@@ -8,7 +8,7 @@ import Hero from "./Hero";
 function Home() {
 
   return (
-    <div className=" space-y-10 pr-6 pl-6  select-none">
+    <div className=" space-y-10 pr-6 pl-6 select-none ">
       <Hero/>
       <Picks />
       <Community />

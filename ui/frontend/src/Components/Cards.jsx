@@ -25,7 +25,7 @@ export default function Cards({ app }) {
     } catch (err) {
       console.log("Error:", err);
       if (String(err).includes("Already Install")) {
-        toast("Already installed on your PC! ✓", {
+        toast(`${app.name} Already Installed. `, {
            icon: ({theme, type}) =>  <img src={icon} />
         });
       }

@@ -7,7 +7,7 @@ export default function Hero() {
 
   return (
     <div
-      className="rounded-2xl p-8 relative overflow-hidden"
+      className="rounded-2xl p-6 relative overflow-hidden"
       style={{ background: "linear-gradient(135deg, #f4f4f5 0%, #e4e4e7 100%)" }}
     >
       {/* decorative glows */}
