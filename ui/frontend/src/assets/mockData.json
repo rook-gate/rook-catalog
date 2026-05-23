@@ -5,27 +5,27 @@
     {
       "id": "developer tools",
       "label": "Developer Tools",
-      "apps": ["vscode", "git", "nodejs", "docker", "postman"]
+      "apps": ["vscode", "git", "nodejs", "docker", "postman", "7zip", "python", "golang", "rustup", "neovim", "windowsterminal", "insomnia", "github-desktop", "dbeaver", "figma"]
     },
     {
       "id": "browsers",
       "label": "Browsers",
-      "apps": ["chrome", "firefox", "edge", "brave", "opera"]
+      "apps": ["chrome", "firefox", "edge", "brave", "opera", "vivaldi", "tor", "waterfox"]
     },
     {
       "id": "productivity",
       "label": "Productivity",
-      "apps": ["notion", "obsidian", "libreoffice", "evernote", "trello"]
+      "apps": ["notion", "obsidian", "libreoffice", "evernote", "trello", "anydesk", "notepadplusplus", "clockify"]
     },
     {
       "id": "gaming",
       "label": "Gaming",
-      "apps": ["steam", "epicgames", "gog", "battle.net", "discord"]
+      "apps": ["steam", "epicgames", "gog", "battle.net", "discord", "playnite", "parsec", "moonlight"]
     },
     {
       "id": "communication",
       "label": "Communication",
-      "apps": ["discord", "zoom", "slack", "teams", "skype"]
+      "apps": ["discord", "zoom", "slack", "teams", "skype", "telegram", "signal", "thunderbird"]
     }
   ],
 
@@ -61,6 +61,16 @@
       "tags": ["runtime", "js"]
     },
     {
+      "id": "7zip",
+      "name": "7-Zip",
+      "wingetId": "7zip.7zip",
+      "category": "developer tools",
+      "publisher": "Igor Pavlov",
+      "homepage": "https://www.7-zip.org",
+      "description": "Fast and free file archiver.",
+      "tags": ["zip", "archive"]
+    },
+    {
       "id": "docker",
       "name": "Docker Desktop",
       "wingetId": "Docker.DockerDesktop",
@@ -77,8 +87,98 @@
       "category": "developer tools",
       "publisher": "Postman Inc.",
       "homepage": "https://www.postman.com",
-      "description": "API testing tool.",
+      "description": "API testing and development tool.",
       "tags": ["api"]
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "wingetId": "Python.Python.3.12",
+      "category": "developer tools",
+      "publisher": "Python Software Foundation",
+      "homepage": "https://www.python.org",
+      "description": "Popular general-purpose programming language.",
+      "tags": ["runtime", "language"]
+    },
+    {
+      "id": "golang",
+      "name": "Go",
+      "wingetId": "GoLang.Go",
+      "category": "developer tools",
+      "publisher": "Google",
+      "homepage": "https://go.dev",
+      "description": "Fast and statically typed programming language.",
+      "tags": ["runtime", "language"]
+    },
+    {
+      "id": "rustup",
+      "name": "Rust",
+      "wingetId": "Rustlang.Rustup",
+      "category": "developer tools",
+      "publisher": "Rust Foundation",
+      "homepage": "https://www.rust-lang.org",
+      "description": "Systems programming language focused on safety.",
+      "tags": ["runtime", "language"]
+    },
+    {
+      "id": "neovim",
+      "name": "Neovim",
+      "wingetId": "Neovim.Neovim",
+      "category": "developer tools",
+      "publisher": "Neovim",
+      "homepage": "https://neovim.io",
+      "description": "Hyperextensible Vim-based text editor.",
+      "tags": ["editor", "terminal"]
+    },
+    {
+      "id": "windowsterminal",
+      "name": "Windows Terminal",
+      "wingetId": "Microsoft.WindowsTerminal",
+      "category": "developer tools",
+      "publisher": "Microsoft",
+      "homepage": "https://aka.ms/terminal",
+      "description": "Modern terminal app for command-line tools.",
+      "tags": ["terminal", "dev"]
+    },
+    {
+      "id": "insomnia",
+      "name": "Insomnia",
+      "wingetId": "Kong.Insomnia",
+      "category": "developer tools",
+      "publisher": "Kong",
+      "homepage": "https://insomnia.rest",
+      "description": "REST and GraphQL API client.",
+      "tags": ["api", "dev"]
+    },
+    {
+      "id": "github-desktop",
+      "name": "GitHub Desktop",
+      "wingetId": "GitHub.GitHubDesktop",
+      "category": "developer tools",
+      "publisher": "GitHub",
+      "homepage": "https://desktop.github.com",
+      "description": "GUI client for Git and GitHub.",
+      "tags": ["vcs", "git"]
+    },
+    {
+      "id": "dbeaver",
+      "name": "DBeaver",
+      "wingetId": "dbeaver.dbeaver",
+      "category": "developer tools",
+      "publisher": "DBeaver Corp",
+      "homepage": "https://dbeaver.io",
+      "description": "Universal database management tool.",
+      "tags": ["database", "sql"]
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "wingetId": "Figma.Figma",
+      "category": "developer tools",
+      "publisher": "Figma Inc.",
+      "homepage": "https://www.figma.com",
+      "description": "Collaborative UI/UX design tool.",
+      "tags": ["design", "ui"]
     },
     {
       "id": "chrome",
@@ -131,6 +231,36 @@
       "tags": ["browser"]
     },
     {
+      "id": "vivaldi",
+      "name": "Vivaldi",
+      "wingetId": "VivaldiTechnologies.Vivaldi",
+      "category": "browsers",
+      "publisher": "Vivaldi Technologies",
+      "homepage": "https://vivaldi.com",
+      "description": "Highly customizable browser for power users.",
+      "tags": ["browser"]
+    },
+    {
+      "id": "tor",
+      "name": "Tor Browser",
+      "wingetId": "TorProject.TorBrowser",
+      "category": "browsers",
+      "publisher": "Tor Project",
+      "homepage": "https://www.torproject.org",
+      "description": "Anonymous browsing via the Tor network.",
+      "tags": ["browser", "privacy"]
+    },
+    {
+      "id": "waterfox",
+      "name": "Waterfox",
+      "wingetId": "Waterfox.Waterfox",
+      "category": "browsers",
+      "publisher": "Waterfox",
+      "homepage": "https://www.waterfox.net",
+      "description": "Fast and private Firefox-based browser.",
+      "tags": ["browser", "privacy"]
+    },
+    {
       "id": "notion",
       "name": "Notion",
       "wingetId": "Notion.Notion",
@@ -181,6 +311,36 @@
       "tags": ["tasks"]
     },
     {
+      "id": "anydesk",
+      "name": "AnyDesk",
+      "wingetId": "AnyDeskSoftwareGmbH.AnyDesk",
+      "category": "productivity",
+      "publisher": "AnyDesk Software",
+      "homepage": "https://anydesk.com",
+      "description": "Fast remote desktop application.",
+      "tags": ["remote", "productivity"]
+    },
+    {
+      "id": "notepadplusplus",
+      "name": "Notepad++",
+      "wingetId": "Notepad++.Notepad++",
+      "category": "productivity",
+      "publisher": "Notepad++",
+      "homepage": "https://notepad-plus-plus.org",
+      "description": "Lightweight text and code editor.",
+      "tags": ["editor", "text"]
+    },
+    {
+      "id": "clockify",
+      "name": "Clockify",
+      "wingetId": "Clockify.Clockify",
+      "category": "productivity",
+      "publisher": "Clockify",
+      "homepage": "https://clockify.me",
+      "description": "Free time tracking tool for teams.",
+      "tags": ["time", "productivity"]
+    },
+    {
       "id": "steam",
       "name": "Steam",
       "wingetId": "Valve.Steam",
@@ -219,6 +379,36 @@
       "homepage": "https://battle.net",
       "description": "Blizzard games launcher.",
       "tags": ["games"]
+    },
+    {
+      "id": "playnite",
+      "name": "Playnite",
+      "wingetId": "Playnite.Playnite",
+      "category": "gaming",
+      "publisher": "Playnite",
+      "homepage": "https://playnite.link",
+      "description": "Open source video game library manager.",
+      "tags": ["games", "library"]
+    },
+    {
+      "id": "parsec",
+      "name": "Parsec",
+      "wingetId": "Parsec.Parsec",
+      "category": "gaming",
+      "publisher": "Parsec Cloud",
+      "homepage": "https://parsec.app",
+      "description": "Remote game streaming with low latency.",
+      "tags": ["games", "streaming"]
+    },
+    {
+      "id": "moonlight",
+      "name": "Moonlight",
+      "wingetId": "MoonlightGameStreamingProject.Moonlight",
+      "category": "gaming",
+      "publisher": "Moonlight Project",
+      "homepage": "https://moonlight-stream.org",
+      "description": "Stream games from your PC anywhere.",
+      "tags": ["games", "streaming"]
     },
     {
       "id": "discord",
@@ -269,6 +459,36 @@
       "homepage": "https://www.skype.com",
       "description": "Calling app.",
       "tags": ["calls"]
+    },
+    {
+      "id": "telegram",
+      "name": "Telegram",
+      "wingetId": "Telegram.TelegramDesktop",
+      "category": "communication",
+      "publisher": "Telegram",
+      "homepage": "https://telegram.org",
+      "description": "Fast and secure messaging app.",
+      "tags": ["chat", "messaging"]
+    },
+    {
+      "id": "signal",
+      "name": "Signal",
+      "wingetId": "OpenWhisperSystems.Signal",
+      "category": "communication",
+      "publisher": "Signal Foundation",
+      "homepage": "https://signal.org",
+      "description": "Encrypted private messaging app.",
+      "tags": ["chat", "privacy"]
+    },
+    {
+      "id": "thunderbird",
+      "name": "Thunderbird",
+      "wingetId": "Mozilla.Thunderbird",
+      "category": "communication",
+      "publisher": "Mozilla",
+      "homepage": "https://www.thunderbird.net",
+      "description": "Free email and calendar client.",
+      "tags": ["email", "calendar"]
     }
   ]
 }

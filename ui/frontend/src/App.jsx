@@ -6,15 +6,22 @@ import { useCatalogStore } from "./stores/useCatalogStore";
 import Navbar from "./Components/Navbar";
 import { GridPattern } from "./Components/grid-pattern";
 import Items from "./Components/items";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Home from "./Components/Home";
 
 function App() {
   const [loadingApp, setLoadingApp] = useState(null);
+  const activeCategory = useCatalogStore((s) => s.activeCategory);
+    const isHome = activeCategory === "home";
   return (
+    
     <div className="h-screen flex flex-col overflow-hidden bg-[#141414]">
+      <ToastContainer position="top-left"  theme="dark"/>
       <Navbar />
-      <div className="flex flex-1 overflow-hidden">
+      <div className="flex flex-1 overflow-hidden overflow-y-auto no-scrollbar ">
         <Sidebar />
-        <div className="flex-1 overflow-y-auto bg-white">
+        <div className="flex-1 overflow-y-auto bg-white no-scrollbar overflow-y-auto">
           <div className="relative min-h-full p-8">
             <GridPattern
               width={32}
@@ -28,7 +35,8 @@ function App() {
               ]}
             />
             <div className="relative z-10">
-              <Items />
+            
+              {isHome ? <Home /> : <Items />}
             </div>
           </div>
         </div>

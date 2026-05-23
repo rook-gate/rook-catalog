@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"os/exec"
+	"strings"
 )
 
 // App struct
@@ -32,6 +33,12 @@ func (a *App) InstallApp(wingetID string) error {
 
 	fmt.Println("Executing command:", cmd.String())
 	out, err := cmd.CombinedOutput()
+
+	output := string(out)
+
+	if strings.Contains(output, "already installed") {
+		return  fmt.Errorf("Already Install")
+	}
 
 	if err != nil {
 		return fmt.Errorf("winget install failed: %s\n%s", err.Error(), string(out))

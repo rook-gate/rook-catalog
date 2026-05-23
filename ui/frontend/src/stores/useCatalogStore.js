@@ -2,7 +2,7 @@ import { create } from "zustand"
 
 
 export const useCatalogStore = create((set) => ({
-  activeCategory: "developer tools",
+  activeCategory: "home",
   setActiveCategory: (id) => set({ activeCategory: id }),
 
   installingApps: new Set(),

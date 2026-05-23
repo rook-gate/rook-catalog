@@ -3,7 +3,9 @@ import data from "../assets/mockData.json";
 import { CAT_COLORS, DEFAULT_COLOR } from "../stores/catColor";
 import { useState } from "react";
 import { InstallApp } from "../../wailsjs/go/main/App";
-import {useCatalogStore} from "../stores/useCatalogStore";
+import { useCatalogStore } from "../stores/useCatalogStore";
+import { ToastContainer, toast } from "react-toastify";
+import icon from "../assets/appicon.png";
 
 export default function Cards({ app }) {
   const domain = app?.homepage ? new URL(app.homepage).hostname : null;
@@ -19,8 +21,14 @@ export default function Cards({ app }) {
     try {
       setInstalling(app.id, true);
       await InstallApp(app.wingetId);
+       toast.success(`${app.name} installed successfully! ↈ`);
     } catch (err) {
       console.log("Error:", err);
+      if (String(err).includes("Already Install")) {
+        toast("Already installed on your PC! ✓", {
+           icon: ({theme, type}) =>  <img src={icon} />
+        });
+      }
     } finally {
       setInstalling(app.id, false);
     }
@@ -31,7 +39,6 @@ export default function Cards({ app }) {
       className="bg-white rounded-2xl p-4 w-56 h-48 flex flex-col gap-3 shadow-[0_1px_3px_rgba(0,0,0,0.06),0_4px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-200 cursor-pointer hover:-translate-y-1 "
       style={{ borderTop: `3px solid ${color.bg}` }}
     >
-      {/* TOP ROW: icon + name */}
       <div className="flex items-center gap-3">
         {/* Icon */}
         <div className="w-12 h-12 rounded-xl bg-[#f4f4f5] flex items-center justify-center overflow-hidden shrink-0">

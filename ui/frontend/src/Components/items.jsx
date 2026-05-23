@@ -12,12 +12,10 @@ function Items() {
   });
 
   console.log("activeCategory:", activeCategory);
-  console.log("apps:", data.apps);
-  console.log("filtered:", filteredApps);
   return (
     <>
-      <div className="px-6 underline -mt-4 pl-6 select-none">
-        <h1 className="text-xs font-semibold uppercase tracking-widest text-zinc-400">
+      <div className="px-6 underline -mt-4 pl-6 select-none  no-scrollbar overflow-y-scroll">
+        <h1 className="text-xs font-semibold uppercase underline tracking-widest text-zinc-400">
           {activeCategory}
         </h1>
       </div>
