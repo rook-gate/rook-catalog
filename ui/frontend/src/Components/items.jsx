@@ -5,7 +5,7 @@ import { useCatalogStore } from "../stores/useCatalogStore";
 
 function Items() {
   const activeCategory = useCatalogStore((s) => s.activeCategory);
-
+  
   const filteredApps = data?.apps?.filter((app) => {
     if (activeCategory === "all") return true;
     return app.category === activeCategory;

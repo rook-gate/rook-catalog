@@ -5,7 +5,3 @@
 export function InstallApp(arg1) {
   return window['go']['main']['App']['InstallApp'](arg1);
 }
-
-export function IsInstalled(arg1) {
-  return window['go']['main']['App']['IsInstalled'](arg1);
-}

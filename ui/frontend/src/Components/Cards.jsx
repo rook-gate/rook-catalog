@@ -3,40 +3,28 @@ import data from "../assets/mockData.json";
 import { CAT_COLORS, DEFAULT_COLOR } from "../stores/catColor";
 import { useState } from "react";
 import { InstallApp } from "../../wailsjs/go/main/App";
-import { IsInstalled } from "../../wailsjs/go/main/App";
-import { useEffect } from "react";
+import {useCatalogStore} from "../stores/useCatalogStore";
 
 export default function Cards({ app }) {
   const domain = app?.homepage ? new URL(app.homepage).hostname : null;
   const iconUrl = domain ? `https://icon.horse/icon/${domain}` : null;
   const [hover, setHover] = useState(false);
-  const [installing, setInstalling] = useState(false);
-  const [installed, setInstalled] = useState(false);
+
+  const installingApps = useCatalogStore((s) => s.installingApps);
+  const setInstalling = useCatalogStore((s) => s.setInstalling);
+  const installing = installingApps.has(app.id);
   const color = CAT_COLORS[app.category] || DEFAULT_COLOR;
 
   const handleInstall = async () => {
     try {
-      setInstalling(true);
+      setInstalling(app.id, true);
       await InstallApp(app.wingetId);
     } catch (err) {
       console.log("Error:", err);
     } finally {
-      setInstalling(false);
+      setInstalling(app.id, false);
     }
   };
-
-  useEffect(() => {
-    const check = async () => {
-      try {
-        const res = await IsInstalled(app.wingetId);
-        setInstalled(res);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-
-    check();
-  }, [app.wingetId]);
 
   return (
     <div
