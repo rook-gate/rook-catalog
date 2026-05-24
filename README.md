@@ -1,4 +1,4 @@
-# Rook Catalog
+# Rook Catalog (In-Development)
 
 A lightweight desktop software catalog for Windows built around a fast, local-first experience powered by Winget.
 
