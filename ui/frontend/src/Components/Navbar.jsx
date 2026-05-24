@@ -29,7 +29,7 @@ function Navbar() {
           className="w-3 h-3 rounded-full bg-green-400 hover:bg-green-500 transition" />
       </div>
 
-      {/* CENTER — app name */}
+   
       <div className="flex items-center gap-2">
         <img src={icon} className="w-5 h-5" />
         <h1 className="text-[13px] font-semibold tracking-tight text-[#18181b] flex items-center gap-2">
