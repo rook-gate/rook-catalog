@@ -1,16 +1,15 @@
-# Rook Catalog
+# Rook Catalog (In-Development)
 
-Rook Catalog is a lightweight, local-first desktop application designed for discovering, installing, and managing Windows software packages through a curated user interface. It acts as a performance-driven graphical client powered natively by the Windows Package Manager (`winget`) CLI.
-
----
-
-## Core Architecture
-
-The application is built using a decoupled desktop architecture designed for minimal memory footprint and native execution speeds:
-
-*   **Backend Runtime:** Go (Golang) handling low-latency system execution, direct process forks, and shell piping to the native system package manager.
-*   **Frontend Interface:** React and Tailwind CSS providing a hardware-accelerated, single-page application interface bound to the Go runtime.
-*   **IPC Bridge:** Bi-directional event binding for asynchronous command streaming (e.g., streaming deployment logs during package installation).
-*   **State Architecture:** Local-first topology utilizing localized, atomic slice stores to track app states without relying on external cloud authentication layers.
+A lightweight desktop software catalog for Windows built around a fast, local-first experience powered by Winget.
 
 ---
+
+Rook Catalog is a modern desktop application designed for discovering and installing Windows software through a clean, curated interface. The application focuses on simplicity, responsiveness, and native system integration while maintaining a minimal and distraction-free user experience.
+
+Built with a local-first architecture, Rook Catalog interacts directly with the Windows Package Manager (`winget`) to provide streamlined software installation without relying on cloud services or external launchers.
+
+The interface emphasizes curated discovery through categorized browsing, editor selections, and community-driven recommendations while keeping performance lightweight and native-feeling.
+
+<p align="center">
+  <img src="./assets/preview.png" width="600" />
+</p>
