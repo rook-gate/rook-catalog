@@ -16,7 +16,7 @@ function Navbar() {
       className="flex items-center justify-between px-4 h-12 bg-[#fafafa] border-b border-zinc-200/80 select-none"
       style={{ "--wails-draggable": "drag" }}
     >
-      {/* LEFT — window controls */}
+      {/* LEFT — window controls Mac like design*/}
       <div
         className="flex items-center gap-1.5"
         style={{ "--wails-draggable": "no-drag" }}

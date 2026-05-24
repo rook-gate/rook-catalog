@@ -1,35 +1,524 @@
 {
-  "version": "1.0.0",
-
+  "version": "2.0.0",
   "categories": [
-    {
-      "id": "developer tools",
-      "label": "Developer Tools",
-      "apps": ["vscode", "git", "nodejs", "docker", "postman", "7zip", "python", "golang", "rustup", "neovim", "windowsterminal", "insomnia", "github-desktop", "dbeaver", "figma"]
-    },
     {
       "id": "browsers",
       "label": "Browsers",
-      "apps": ["chrome", "firefox", "edge", "brave", "opera", "vivaldi", "tor", "waterfox"]
+      "apps": [
+        "chrome",
+        "edge",
+        "firefox",
+        "brave",
+        "opera",
+        "vivaldi",
+        "tor",
+        "chromium",
+        "librewolf",
+        "ungoogled-chromium",
+        "waterfox",
+        "arc",
+        "zen",
+        "floorp",
+        "pale-moon",
+        "duckduckgo",
+        "mullvad-browser",
+        "thorium"
+      ]
     },
     {
-      "id": "productivity",
-      "label": "Productivity",
-      "apps": ["notion", "obsidian", "libreoffice", "evernote", "trello", "anydesk", "notepadplusplus", "clockify"]
-    },
-    {
-      "id": "gaming",
-      "label": "Gaming",
-      "apps": ["steam", "epicgames", "gog", "battle.net", "discord", "playnite", "parsec", "moonlight"]
+      "id": "developer tools",
+      "label": "Developer Tools",
+      "apps": [
+        "zed",
+        "vscode",
+        "git",
+        "nodejs",
+        "python",
+        "docker",
+        "postman",
+        "github-desktop",
+        "intellij-idea-community",
+        "pycharm-community",
+        "webstorm",
+        "rustup",
+        "golang",
+        "cmake",
+        "gradle",
+        "notepadplusplus",
+        "neovim",
+        "vim",
+        "sublime-text",
+        "dbeaver",
+        "mingw",
+        "ruby",
+        "yarn",
+        "jetbrains-toolbox",
+        "system-informer",
+        "amazon-corretto",
+        "sql-server",
+        "kubernetes",
+        "wsl",
+        "github-cli",
+        "mongodb-compass",
+        "redis-insight",
+        "insomnia",
+        "xampp",
+        "vscode-insiders"
+      ]
     },
     {
       "id": "communication",
       "label": "Communication",
-      "apps": ["discord", "zoom", "slack", "teams", "skype", "telegram", "signal", "thunderbird"]
+      "apps": [
+        "whatsapp",
+        "discord",
+        "teams",
+        "slack",
+        "telegram",
+        "zoom",
+        "skype",
+        "signal",
+        "thunderbird",
+        "betterbird",
+        "element",
+        "viber",
+        "chatterino",
+        "proton-mail",
+        "mattermost",
+        "google-meet"
+      ]
+    },
+    {
+      "id": "gaming",
+      "label": "Gaming",
+      "apps": [
+        "steam",
+        "epic-games",
+        "battle-net",
+        "ubisoft-connect",
+        "gog",
+        "riot-client",
+        "ea-app",
+        "xbox-app",
+        "playnite",
+        "geforce-experience",
+        "minecraft-launcher",
+        "prism-launcher",
+        "modrinth",
+        "itch-io",
+        "heroic-games-launcher",
+        "overwolf",
+        "parsec",
+        "moonlight",
+        "nvidia-app"
+      ]
+    },
+    {
+      "id": "productivity",
+      "label": "Productivity",
+      "apps": [
+        "notion",
+        "obsidian",
+        "onenote",
+        "google-keep",
+        "trello",
+        "libreoffice",
+        "evernote",
+        "clockify",
+        "figma",
+        "wps-office",
+        "typora",
+        "logseq",
+        "microsoft-to-do",
+        "todoist",
+        "microsoft-planner",
+        "google-calendar"
+      ]
+    },
+    {
+      "id": "utilities",
+      "label": "Utilities",
+      "apps": [
+        "powertoys",
+        "7zip",
+        "vlc",
+        "anydesk",
+        "windirstat",
+        "treesize",
+        "hwinfo",
+        "rufus",
+        "ventoy",
+        "localsend",
+        "autohotkey",
+        "rainmeter",
+        "openrgb",
+        "signalrgb",
+        "translucenttb",
+        "colorpicker",
+        "winrar",
+        "lively-wallpaper",
+        "files",
+        "everything",
+        "crystal-disk-info",
+        "process-explorer",
+        "autoruns",
+        "sharex",
+        "obs-studio",
+        "snappy-driver-installer"
+      ]
     }
   ],
-
   "apps": [
+    {
+      "id": "chrome",
+      "name": "Google Chrome",
+      "wingetId": "Google.Chrome",
+      "category": "browsers",
+      "publisher": "Google",
+      "homepage": "https://www.google.com/chrome/",
+      "description": "Fast and widely used web browser.",
+      "tags": ["browser"]
+    },
+    {
+      "id": "edge",
+      "name": "Microsoft Edge",
+      "wingetId": "Microsoft.Edge",
+      "category": "browsers",
+      "publisher": "Microsoft",
+      "homepage": "https://www.microsoft.com/edge",
+      "description": "Chromium-based browser by Microsoft.",
+      "tags": ["browser"]
+    },
+    {
+      "id": "firefox",
+      "name": "Mozilla Firefox",
+      "wingetId": "Mozilla.Firefox",
+      "category": "browsers",
+      "publisher": "Mozilla",
+      "homepage": "https://www.mozilla.org/firefox/",
+      "description": "Privacy-focused open-source browser.",
+      "tags": ["browser", "privacy"]
+    },
+    {
+      "id": "brave",
+      "name": "Brave",
+      "wingetId": "Brave.Brave",
+      "category": "browsers",
+      "publisher": "Brave Software",
+      "homepage": "https://brave.com",
+      "description": "Privacy-first browser with ad blocking.",
+      "tags": ["browser", "privacy"]
+    },
+    {
+      "id": "opera",
+      "name": "Opera",
+      "wingetId": "Opera.Opera",
+      "category": "browsers",
+      "publisher": "Opera Software",
+      "homepage": "https://www.opera.com",
+      "description": "Feature-rich browser with built-in VPN.",
+      "tags": ["browser"]
+    },
+    {
+      "id": "vivaldi",
+      "name": "Vivaldi",
+      "wingetId": "VivaldiTechnologies.Vivaldi",
+      "category": "browsers",
+      "publisher": "Vivaldi Technologies",
+      "homepage": "https://vivaldi.com",
+      "description": "Highly customizable browser for power users.",
+      "tags": ["browser"]
+    },
+    {
+      "id": "tor",
+      "name": "Tor Browser",
+      "wingetId": "TorProject.TorBrowser",
+      "category": "browsers",
+      "publisher": "Tor Project",
+      "homepage": "https://www.torproject.org",
+      "description": "Anonymous browsing via the Tor network.",
+      "tags": ["browser", "privacy"]
+    },
+    {
+      "id": "chromium",
+      "name": "Chromium",
+      "wingetId": "Hibbiki.Chromium",
+      "category": "browsers",
+      "publisher": "The Chromium Project",
+      "homepage": "https://www.chromium.org",
+      "description": "Open-source browser project behind Chrome.",
+      "tags": ["browser"]
+    },
+    {
+      "id": "librewolf",
+      "name": "LibreWolf",
+      "wingetId": "LibreWolf.LibreWolf",
+      "category": "browsers",
+      "publisher": "LibreWolf",
+      "homepage": "https://librewolf.net",
+      "description": "Privacy-hardened fork of Firefox.",
+      "tags": ["browser", "privacy"]
+    },
+    {
+      "id": "ungoogled-chromium",
+      "name": "Ungoogled Chromium",
+      "wingetId": "eloston.ungoogled-chromium",
+      "category": "browsers",
+      "publisher": "Eloston",
+      "homepage": "https://github.com/ungoogled-software/ungoogled-chromium",
+      "description": "Chromium without Google integrations.",
+      "tags": ["browser", "privacy"]
+    },
+    {
+      "id": "waterfox",
+      "name": "Waterfox",
+      "wingetId": "Waterfox.Waterfox",
+      "category": "browsers",
+      "publisher": "Waterfox",
+      "homepage": "https://www.waterfox.net",
+      "description": "Fast and private Firefox-based browser.",
+      "tags": ["browser", "privacy"]
+    },
+    {
+      "id": "arc",
+      "name": "Arc",
+      "wingetId": "TheBrowserCompany.Arc",
+      "category": "browsers",
+      "publisher": "The Browser Company",
+      "homepage": "https://arc.net",
+      "description": "Modern browser reimagining how you use the web.",
+      "tags": ["browser"]
+    },
+    {
+      "id": "zen",
+      "name": "Zen Browser",
+      "wingetId": "Zen-Team.Zen-Browser",
+      "category": "browsers",
+      "publisher": "Zen Team",
+      "homepage": "https://zen-browser.app",
+      "description": "Beautifully designed Firefox-based browser.",
+      "tags": ["browser", "privacy"]
+    },
+    {
+      "id": "floorp",
+      "name": "Floorp",
+      "wingetId": "Ablaze.Floorp",
+      "category": "browsers",
+      "publisher": "Ablaze",
+      "homepage": "https://floorp.app",
+      "description": "Highly customizable Firefox-based browser.",
+      "tags": ["browser"]
+    },
+    {
+      "id": "pale-moon",
+      "name": "Pale Moon",
+      "wingetId": "MoonchildProductions.PaleMoon",
+      "category": "browsers",
+      "publisher": "Moonchild Productions",
+      "homepage": "https://www.palemoon.org",
+      "description": "Lightweight Gecko-based browser.",
+      "tags": ["browser"]
+    },
+    {
+      "id": "duckduckgo",
+      "name": "DuckDuckGo",
+      "wingetId": "DuckDuckGo.DesktopBrowser",
+      "category": "browsers",
+      "publisher": "DuckDuckGo",
+      "homepage": "https://duckduckgo.com/app",
+      "description": "Privacy-focused browser with tracker blocking.",
+      "tags": ["browser", "privacy"]
+    },
+    {
+      "id": "mullvad-browser",
+      "name": "Mullvad Browser",
+      "wingetId": "MullvadVPN.MullvadBrowser",
+      "category": "browsers",
+      "publisher": "Mullvad VPN",
+      "homepage": "https://mullvad.net/browser",
+      "description": "Privacy browser designed to minimize tracking.",
+      "tags": ["browser", "privacy"]
+    },
+    {
+      "id": "thorium",
+      "name": "Thorium",
+      "wingetId": "Alex313031.Thorium",
+      "category": "browsers",
+      "publisher": "Alex313031",
+      "homepage": "https://thorium.rocks",
+      "description": "Performance-optimized Chromium-based browser.",
+      "tags": ["browser"]
+    },
+    {
+      "id": "whatsapp",
+      "name": "WhatsApp",
+      "wingetId": "9NKSQGP7F2NH",
+      "category": "communication",
+      "publisher": "Meta",
+      "homepage": "https://www.whatsapp.com",
+      "description": "Popular messaging app by Meta.",
+      "tags": ["chat", "messaging"]
+    },
+    {
+      "id": "discord",
+      "name": "Discord",
+      "wingetId": "Discord.Discord",
+      "category": "communication",
+      "publisher": "Discord Inc.",
+      "homepage": "https://discord.com",
+      "description": "Chat and voice platform for communities.",
+      "tags": ["chat", "voice"]
+    },
+    {
+      "id": "teams",
+      "name": "Microsoft Teams",
+      "wingetId": "Microsoft.Teams",
+      "category": "communication",
+      "publisher": "Microsoft",
+      "homepage": "https://www.microsoft.com/teams",
+      "description": "Collaboration and meetings platform.",
+      "tags": ["meetings", "chat"]
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "wingetId": "SlackTechnologies.Slack",
+      "category": "communication",
+      "publisher": "Slack Technologies",
+      "homepage": "https://slack.com",
+      "description": "Team communication and productivity app.",
+      "tags": ["chat"]
+    },
+    {
+      "id": "telegram",
+      "name": "Telegram",
+      "wingetId": "Telegram.TelegramDesktop",
+      "category": "communication",
+      "publisher": "Telegram",
+      "homepage": "https://telegram.org",
+      "description": "Fast and secure messaging app.",
+      "tags": ["chat", "messaging"]
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom",
+      "wingetId": "Zoom.Zoom",
+      "category": "communication",
+      "publisher": "Zoom Video Communications",
+      "homepage": "https://zoom.us",
+      "description": "Video meetings and conferencing platform.",
+      "tags": ["meetings"]
+    },
+    {
+      "id": "skype",
+      "name": "Skype",
+      "wingetId": "Microsoft.Skype",
+      "category": "communication",
+      "publisher": "Microsoft",
+      "homepage": "https://www.skype.com",
+      "description": "Video and voice calling app.",
+      "tags": ["calls"]
+    },
+    {
+      "id": "signal",
+      "name": "Signal",
+      "wingetId": "OpenWhisperSystems.Signal",
+      "category": "communication",
+      "publisher": "Signal Foundation",
+      "homepage": "https://signal.org",
+      "description": "End-to-end encrypted private messaging.",
+      "tags": ["chat", "privacy"]
+    },
+    {
+      "id": "thunderbird",
+      "name": "Thunderbird",
+      "wingetId": "Mozilla.Thunderbird",
+      "category": "communication",
+      "publisher": "Mozilla",
+      "homepage": "https://www.thunderbird.net",
+      "description": "Free email and calendar client.",
+      "tags": ["email", "calendar"]
+    },
+    {
+      "id": "betterbird",
+      "name": "Betterbird",
+      "wingetId": "Betterbird.Betterbird",
+      "category": "communication",
+      "publisher": "Betterbird",
+      "homepage": "https://www.betterbird.eu",
+      "description": "Enhanced fork of Mozilla Thunderbird.",
+      "tags": ["email", "calendar"]
+    },
+    {
+      "id": "element",
+      "name": "Element",
+      "wingetId": "Element.Element",
+      "category": "communication",
+      "publisher": "Element",
+      "homepage": "https://element.io",
+      "description": "Decentralized Matrix protocol messenger.",
+      "tags": ["chat", "privacy"]
+    },
+    {
+      "id": "viber",
+      "name": "Viber",
+      "wingetId": "Viber.Viber",
+      "category": "communication",
+      "publisher": "Viber Media",
+      "homepage": "https://www.viber.com",
+      "description": "Free messaging and calling app.",
+      "tags": ["chat", "calls"]
+    },
+    {
+      "id": "chatterino",
+      "name": "Chatterino",
+      "wingetId": "ChatterinoTeam.Chatterino",
+      "category": "communication",
+      "publisher": "Chatterino Team",
+      "homepage": "https://chatterino.com",
+      "description": "Chat client for Twitch.",
+      "tags": ["chat", "streaming"]
+    },
+    {
+      "id": "proton-mail",
+      "name": "Proton Mail",
+      "wingetId": "Proton.ProtonMail",
+      "category": "communication",
+      "publisher": "Proton AG",
+      "homepage": "https://proton.me/mail",
+      "description": "Encrypted email service by Proton.",
+      "tags": ["email", "privacy"]
+    },
+    {
+      "id": "mattermost",
+      "name": "Mattermost",
+      "wingetId": "Mattermost.Mattermost",
+      "category": "communication",
+      "publisher": "Mattermost",
+      "homepage": "https://mattermost.com",
+      "description": "Open-source team collaboration platform.",
+      "tags": ["chat"]
+    },
+    {
+      "id": "google-meet",
+      "name": "Google Meet",
+      "wingetId": "Google.GoogleMeet",
+      "category": "communication",
+      "publisher": "Google",
+      "homepage": "https://meet.google.com",
+      "description": "Video conferencing by Google.",
+      "tags": ["meetings"]
+    },
+    {
+      "id": "zed",
+      "name": "Zed",
+      "wingetId": "Zed.Zed",
+      "category": "developer tools",
+      "publisher": "Zed Industries",
+      "homepage": "https://zed.dev",
+      "description": "High-performance collaborative code editor.",
+      "tags": ["editor", "dev"]
+    },
     {
       "id": "vscode",
       "name": "Visual Studio Code",
@@ -61,36 +550,6 @@
       "tags": ["runtime", "js"]
     },
     {
-      "id": "7zip",
-      "name": "7-Zip",
-      "wingetId": "7zip.7zip",
-      "category": "developer tools",
-      "publisher": "Igor Pavlov",
-      "homepage": "https://www.7-zip.org",
-      "description": "Fast and free file archiver.",
-      "tags": ["zip", "archive"]
-    },
-    {
-      "id": "docker",
-      "name": "Docker Desktop",
-      "wingetId": "Docker.DockerDesktop",
-      "category": "developer tools",
-      "publisher": "Docker",
-      "homepage": "https://www.docker.com",
-      "description": "Container platform for developers.",
-      "tags": ["containers"]
-    },
-    {
-      "id": "postman",
-      "name": "Postman",
-      "wingetId": "Postman.Postman",
-      "category": "developer tools",
-      "publisher": "Postman Inc.",
-      "homepage": "https://www.postman.com",
-      "description": "API testing and development tool.",
-      "tags": ["api"]
-    },
-    {
       "id": "python",
       "name": "Python",
       "wingetId": "Python.Python.3.12",
@@ -101,53 +560,23 @@
       "tags": ["runtime", "language"]
     },
     {
-      "id": "golang",
-      "name": "Go",
-      "wingetId": "GoLang.Go",
+      "id": "docker",
+      "name": "Docker Desktop",
+      "wingetId": "Docker.DockerDesktop",
       "category": "developer tools",
-      "publisher": "Google",
-      "homepage": "https://go.dev",
-      "description": "Fast and statically typed programming language.",
-      "tags": ["runtime", "language"]
+      "publisher": "Docker",
+      "homepage": "https://www.docker.com",
+      "description": "Container platform for developers.",
+      "tags": ["containers", "dev"]
     },
     {
-      "id": "rustup",
-      "name": "Rust",
-      "wingetId": "Rustlang.Rustup",
+      "id": "postman",
+      "name": "Postman",
+      "wingetId": "Postman.Postman",
       "category": "developer tools",
-      "publisher": "Rust Foundation",
-      "homepage": "https://www.rust-lang.org",
-      "description": "Systems programming language focused on safety.",
-      "tags": ["runtime", "language"]
-    },
-    {
-      "id": "neovim",
-      "name": "Neovim",
-      "wingetId": "Neovim.Neovim",
-      "category": "developer tools",
-      "publisher": "Neovim",
-      "homepage": "https://neovim.io",
-      "description": "Hyperextensible Vim-based text editor.",
-      "tags": ["editor", "terminal"]
-    },
-    {
-      "id": "windowsterminal",
-      "name": "Windows Terminal",
-      "wingetId": "Microsoft.WindowsTerminal",
-      "category": "developer tools",
-      "publisher": "Microsoft",
-      "homepage": "https://aka.ms/terminal",
-      "description": "Modern terminal app for command-line tools.",
-      "tags": ["terminal", "dev"]
-    },
-    {
-      "id": "insomnia",
-      "name": "Insomnia",
-      "wingetId": "Kong.Insomnia",
-      "category": "developer tools",
-      "publisher": "Kong",
-      "homepage": "https://insomnia.rest",
-      "description": "REST and GraphQL API client.",
+      "publisher": "Postman Inc.",
+      "homepage": "https://www.postman.com",
+      "description": "API testing and development tool.",
       "tags": ["api", "dev"]
     },
     {
@@ -161,6 +590,116 @@
       "tags": ["vcs", "git"]
     },
     {
+      "id": "intellij-idea-community",
+      "name": "IntelliJ IDEA Community",
+      "wingetId": "JetBrains.IntelliJIDEA.Community",
+      "category": "developer tools",
+      "publisher": "JetBrains",
+      "homepage": "https://www.jetbrains.com/idea/",
+      "description": "Powerful IDE for Java and Kotlin development.",
+      "tags": ["ide", "java"]
+    },
+    {
+      "id": "pycharm-community",
+      "name": "PyCharm Community",
+      "wingetId": "JetBrains.PyCharm.Community",
+      "category": "developer tools",
+      "publisher": "JetBrains",
+      "homepage": "https://www.jetbrains.com/pycharm/",
+      "description": "IDE for Python development.",
+      "tags": ["ide", "python"]
+    },
+    {
+      "id": "webstorm",
+      "name": "WebStorm",
+      "wingetId": "JetBrains.WebStorm",
+      "category": "developer tools",
+      "publisher": "JetBrains",
+      "homepage": "https://www.jetbrains.com/webstorm/",
+      "description": "IDE for JavaScript and web development.",
+      "tags": ["ide", "js"]
+    },
+    {
+      "id": "rustup",
+      "name": "Rust",
+      "wingetId": "Rustlang.Rustup",
+      "category": "developer tools",
+      "publisher": "Rust Foundation",
+      "homepage": "https://www.rust-lang.org",
+      "description": "Systems programming language focused on safety.",
+      "tags": ["runtime", "language"]
+    },
+    {
+      "id": "golang",
+      "name": "Go",
+      "wingetId": "GoLang.Go",
+      "category": "developer tools",
+      "publisher": "Google",
+      "homepage": "https://go.dev",
+      "description": "Fast and statically typed programming language.",
+      "tags": ["runtime", "language"]
+    },
+    {
+      "id": "cmake",
+      "name": "CMake",
+      "wingetId": "Kitware.CMake",
+      "category": "developer tools",
+      "publisher": "Kitware",
+      "homepage": "https://cmake.org",
+      "description": "Cross-platform build system generator.",
+      "tags": ["build", "dev"]
+    },
+    {
+      "id": "gradle",
+      "name": "Gradle",
+      "wingetId": "Gradle.Gradle",
+      "category": "developer tools",
+      "publisher": "Gradle Inc.",
+      "homepage": "https://gradle.org",
+      "description": "Build automation tool for JVM projects.",
+      "tags": ["build", "java"]
+    },
+    {
+      "id": "notepadplusplus",
+      "name": "Notepad++",
+      "wingetId": "Notepad++.Notepad++",
+      "category": "developer tools",
+      "publisher": "Notepad++",
+      "homepage": "https://notepad-plus-plus.org",
+      "description": "Lightweight text and code editor.",
+      "tags": ["editor", "text"]
+    },
+    {
+      "id": "neovim",
+      "name": "Neovim",
+      "wingetId": "Neovim.Neovim",
+      "category": "developer tools",
+      "publisher": "Neovim",
+      "homepage": "https://neovim.io",
+      "description": "Hyperextensible Vim-based text editor.",
+      "tags": ["editor", "terminal"]
+    },
+    {
+      "id": "vim",
+      "name": "Vim",
+      "wingetId": "vim.vim",
+      "category": "developer tools",
+      "publisher": "Bram Moolenaar",
+      "homepage": "https://www.vim.org",
+      "description": "Highly configurable terminal text editor.",
+      "tags": ["editor", "terminal"]
+    },
+    {
+      "id": "sublime-text",
+      "name": "Sublime Text",
+      "wingetId": "SublimeHQ.SublimeText.4",
+      "category": "developer tools",
+      "publisher": "Sublime HQ",
+      "homepage": "https://www.sublimetext.com",
+      "description": "Sophisticated text editor for code and markup.",
+      "tags": ["editor", "dev"]
+    },
+    {
       "id": "dbeaver",
       "name": "DBeaver",
       "wingetId": "dbeaver.dbeaver",
@@ -171,174 +710,154 @@
       "tags": ["database", "sql"]
     },
     {
-      "id": "figma",
-      "name": "Figma",
-      "wingetId": "Figma.Figma",
+      "id": "mingw",
+      "name": "MinGW",
+      "wingetId": "MinGW-w64.MinGW-w64",
       "category": "developer tools",
-      "publisher": "Figma Inc.",
-      "homepage": "https://www.figma.com",
-      "description": "Collaborative UI/UX design tool.",
-      "tags": ["design", "ui"]
+      "publisher": "MinGW-w64 Project",
+      "homepage": "https://www.mingw-w64.org",
+      "description": "GCC compiler toolchain for Windows.",
+      "tags": ["compiler", "dev"]
     },
     {
-      "id": "chrome",
-      "name": "Google Chrome",
-      "wingetId": "Google.Chrome",
-      "category": "browsers",
-      "publisher": "Google",
-      "homepage": "https://www.google.com/chrome/",
-      "description": "Fast web browser.",
-      "tags": ["browser"]
+      "id": "ruby",
+      "name": "Ruby",
+      "wingetId": "RubyInstallerTeam.RubyWithDevKit.3.2",
+      "category": "developer tools",
+      "publisher": "Ruby Installer Team",
+      "homepage": "https://www.ruby-lang.org",
+      "description": "Dynamic open-source programming language.",
+      "tags": ["runtime", "language"]
     },
     {
-      "id": "firefox",
-      "name": "Mozilla Firefox",
-      "wingetId": "Mozilla.Firefox",
-      "category": "browsers",
-      "publisher": "Mozilla",
-      "homepage": "https://www.mozilla.org/firefox/",
-      "description": "Privacy-focused browser.",
-      "tags": ["browser", "privacy"]
+      "id": "yarn",
+      "name": "Yarn",
+      "wingetId": "Yarn.Yarn",
+      "category": "developer tools",
+      "publisher": "Yarn",
+      "homepage": "https://yarnpkg.com",
+      "description": "Fast and reliable Node.js package manager.",
+      "tags": ["package-manager", "js"]
     },
     {
-      "id": "edge",
-      "name": "Microsoft Edge",
-      "wingetId": "Microsoft.Edge",
-      "category": "browsers",
+      "id": "jetbrains-toolbox",
+      "name": "JetBrains Toolbox",
+      "wingetId": "JetBrains.Toolbox",
+      "category": "developer tools",
+      "publisher": "JetBrains",
+      "homepage": "https://www.jetbrains.com/toolbox-app/",
+      "description": "Manager for JetBrains IDEs and tools.",
+      "tags": ["ide", "dev"]
+    },
+    {
+      "id": "system-informer",
+      "name": "System Informer",
+      "wingetId": "winsiderss.systeminformer",
+      "category": "developer tools",
+      "publisher": "Winsider Seminars & Solutions",
+      "homepage": "https://systeminformer.sourceforge.io",
+      "description": "Advanced task manager and system monitor.",
+      "tags": ["monitoring", "dev"]
+    },
+    {
+      "id": "amazon-corretto",
+      "name": "Amazon Corretto",
+      "wingetId": "Amazon.Corretto.21",
+      "category": "developer tools",
+      "publisher": "Amazon",
+      "homepage": "https://aws.amazon.com/corretto/",
+      "description": "Production-ready OpenJDK distribution by Amazon.",
+      "tags": ["runtime", "java"]
+    },
+    {
+      "id": "sql-server",
+      "name": "SQL Server Express",
+      "wingetId": "Microsoft.SQLServerExpressEdition",
+      "category": "developer tools",
       "publisher": "Microsoft",
-      "homepage": "https://www.microsoft.com/edge",
-      "description": "Chromium-based browser.",
-      "tags": ["browser"]
+      "homepage": "https://www.microsoft.com/sql-server",
+      "description": "Free entry-level SQL Server database engine.",
+      "tags": ["database", "sql"]
     },
     {
-      "id": "brave",
-      "name": "Brave",
-      "wingetId": "Brave.Brave",
-      "category": "browsers",
-      "publisher": "Brave Software",
-      "homepage": "https://brave.com",
-      "description": "Privacy-first browser.",
-      "tags": ["browser", "privacy"]
+      "id": "kubernetes",
+      "name": "Kubectl",
+      "wingetId": "Kubernetes.kubectl",
+      "category": "developer tools",
+      "publisher": "Kubernetes",
+      "homepage": "https://kubernetes.io",
+      "description": "CLI tool for managing Kubernetes clusters.",
+      "tags": ["containers", "devops"]
     },
     {
-      "id": "opera",
-      "name": "Opera",
-      "wingetId": "Opera.Opera",
-      "category": "browsers",
-      "publisher": "Opera Software",
-      "homepage": "https://www.opera.com",
-      "description": "Feature-rich browser.",
-      "tags": ["browser"]
+      "id": "wsl",
+      "name": "Windows Subsystem for Linux",
+      "wingetId": "Microsoft.WSL",
+      "category": "developer tools",
+      "publisher": "Microsoft",
+      "homepage": "https://learn.microsoft.com/windows/wsl/",
+      "description": "Run Linux environments natively on Windows.",
+      "tags": ["linux", "dev"]
     },
     {
-      "id": "vivaldi",
-      "name": "Vivaldi",
-      "wingetId": "VivaldiTechnologies.Vivaldi",
-      "category": "browsers",
-      "publisher": "Vivaldi Technologies",
-      "homepage": "https://vivaldi.com",
-      "description": "Highly customizable browser for power users.",
-      "tags": ["browser"]
+      "id": "github-cli",
+      "name": "GitHub CLI",
+      "wingetId": "GitHub.cli",
+      "category": "developer tools",
+      "publisher": "GitHub",
+      "homepage": "https://cli.github.com",
+      "description": "Command-line interface for GitHub.",
+      "tags": ["vcs", "dev"]
     },
     {
-      "id": "tor",
-      "name": "Tor Browser",
-      "wingetId": "TorProject.TorBrowser",
-      "category": "browsers",
-      "publisher": "Tor Project",
-      "homepage": "https://www.torproject.org",
-      "description": "Anonymous browsing via the Tor network.",
-      "tags": ["browser", "privacy"]
+      "id": "mongodb-compass",
+      "name": "MongoDB Compass",
+      "wingetId": "MongoDB.Compass.Full",
+      "category": "developer tools",
+      "publisher": "MongoDB",
+      "homepage": "https://www.mongodb.com/products/compass",
+      "description": "GUI for exploring and querying MongoDB.",
+      "tags": ["database", "nosql"]
     },
     {
-      "id": "waterfox",
-      "name": "Waterfox",
-      "wingetId": "Waterfox.Waterfox",
-      "category": "browsers",
-      "publisher": "Waterfox",
-      "homepage": "https://www.waterfox.net",
-      "description": "Fast and private Firefox-based browser.",
-      "tags": ["browser", "privacy"]
+      "id": "redis-insight",
+      "name": "RedisInsight",
+      "wingetId": "Redis.RedisInsight",
+      "category": "developer tools",
+      "publisher": "Redis",
+      "homepage": "https://redis.io/insight/",
+      "description": "GUI for visualizing and managing Redis data.",
+      "tags": ["database", "nosql"]
     },
     {
-      "id": "notion",
-      "name": "Notion",
-      "wingetId": "Notion.Notion",
-      "category": "productivity",
-      "publisher": "Notion Labs",
-      "homepage": "https://www.notion.so",
-      "description": "All-in-one workspace.",
-      "tags": ["notes"]
+      "id": "insomnia",
+      "name": "Insomnia",
+      "wingetId": "Kong.Insomnia",
+      "category": "developer tools",
+      "publisher": "Kong",
+      "homepage": "https://insomnia.rest",
+      "description": "REST and GraphQL API client.",
+      "tags": ["api", "dev"]
     },
     {
-      "id": "obsidian",
-      "name": "Obsidian",
-      "wingetId": "Obsidian.Obsidian",
-      "category": "productivity",
-      "publisher": "Obsidian",
-      "homepage": "https://obsidian.md",
-      "description": "Knowledge base app.",
-      "tags": ["notes"]
+      "id": "xampp",
+      "name": "XAMPP",
+      "wingetId": "ApacheFriends.Xampp.8.2",
+      "category": "developer tools",
+      "publisher": "Apache Friends",
+      "homepage": "https://www.apachefriends.org",
+      "description": "Local Apache, MySQL, and PHP development stack.",
+      "tags": ["server", "php"]
     },
     {
-      "id": "libreoffice",
-      "name": "LibreOffice",
-      "wingetId": "TheDocumentFoundation.LibreOffice",
-      "category": "productivity",
-      "publisher": "Document Foundation",
-      "homepage": "https://www.libreoffice.org",
-      "description": "Office suite.",
-      "tags": ["office"]
-    },
-    {
-      "id": "evernote",
-      "name": "Evernote",
-      "wingetId": "Evernote.Evernote",
-      "category": "productivity",
-      "publisher": "Evernote",
-      "homepage": "https://evernote.com",
-      "description": "Note-taking app.",
-      "tags": ["notes"]
-    },
-    {
-      "id": "trello",
-      "name": "Trello",
-      "wingetId": "Trello.Trello",
-      "category": "productivity",
-      "publisher": "Atlassian",
-      "homepage": "https://trello.com",
-      "description": "Task management tool.",
-      "tags": ["tasks"]
-    },
-    {
-      "id": "anydesk",
-      "name": "AnyDesk",
-      "wingetId": "AnyDeskSoftwareGmbH.AnyDesk",
-      "category": "productivity",
-      "publisher": "AnyDesk Software",
-      "homepage": "https://anydesk.com",
-      "description": "Fast remote desktop application.",
-      "tags": ["remote", "productivity"]
-    },
-    {
-      "id": "notepadplusplus",
-      "name": "Notepad++",
-      "wingetId": "Notepad++.Notepad++",
-      "category": "productivity",
-      "publisher": "Notepad++",
-      "homepage": "https://notepad-plus-plus.org",
-      "description": "Lightweight text and code editor.",
-      "tags": ["editor", "text"]
-    },
-    {
-      "id": "clockify",
-      "name": "Clockify",
-      "wingetId": "Clockify.Clockify",
-      "category": "productivity",
-      "publisher": "Clockify",
-      "homepage": "https://clockify.me",
-      "description": "Free time tracking tool for teams.",
-      "tags": ["time", "productivity"]
+      "id": "vscode-insiders",
+      "name": "Visual Studio Code Insiders",
+      "wingetId": "Microsoft.VisualStudioCode.Insiders",
+      "category": "developer tools",
+      "publisher": "Microsoft",
+      "homepage": "https://code.visualstudio.com/insiders/",
+      "description": "Nightly build of VS Code with latest features.",
+      "tags": ["editor", "dev"]
     },
     {
       "id": "steam",
@@ -347,18 +866,38 @@
       "category": "gaming",
       "publisher": "Valve",
       "homepage": "https://store.steampowered.com",
-      "description": "PC gaming platform.",
-      "tags": ["games"]
+      "description": "Largest PC gaming platform.",
+      "tags": ["games", "launcher"]
     },
     {
-      "id": "epicgames",
+      "id": "epic-games",
       "name": "Epic Games Launcher",
       "wingetId": "EpicGames.EpicGamesLauncher",
       "category": "gaming",
       "publisher": "Epic Games",
       "homepage": "https://www.epicgames.com",
-      "description": "Game launcher.",
-      "tags": ["games"]
+      "description": "Game store and launcher by Epic Games.",
+      "tags": ["games", "launcher"]
+    },
+    {
+      "id": "battle-net",
+      "name": "Battle.net",
+      "wingetId": "Blizzard.BattleNet",
+      "category": "gaming",
+      "publisher": "Blizzard Entertainment",
+      "homepage": "https://battle.net",
+      "description": "Launcher for Blizzard and Activision games.",
+      "tags": ["games", "launcher"]
+    },
+    {
+      "id": "ubisoft-connect",
+      "name": "Ubisoft Connect",
+      "wingetId": "Ubisoft.Connect",
+      "category": "gaming",
+      "publisher": "Ubisoft",
+      "homepage": "https://ubisoftconnect.com",
+      "description": "Ubisoft's game launcher and social platform.",
+      "tags": ["games", "launcher"]
     },
     {
       "id": "gog",
@@ -367,18 +906,38 @@
       "category": "gaming",
       "publisher": "CD Projekt",
       "homepage": "https://www.gog.com",
-      "description": "Game library manager.",
-      "tags": ["games"]
+      "description": "DRM-free game library manager.",
+      "tags": ["games", "launcher"]
     },
     {
-      "id": "battle.net",
-      "name": "Battle.net",
-      "wingetId": "Blizzard.BattleNet",
+      "id": "riot-client",
+      "name": "Riot Client",
+      "wingetId": "RiotGames.RiotClient",
       "category": "gaming",
-      "publisher": "Blizzard",
-      "homepage": "https://battle.net",
-      "description": "Blizzard games launcher.",
-      "tags": ["games"]
+      "publisher": "Riot Games",
+      "homepage": "https://www.riotgames.com",
+      "description": "Launcher for Riot Games titles.",
+      "tags": ["games", "launcher"]
+    },
+    {
+      "id": "ea-app",
+      "name": "EA App",
+      "wingetId": "ElectronicArts.EADesktop",
+      "category": "gaming",
+      "publisher": "Electronic Arts",
+      "homepage": "https://www.ea.com/ea-app",
+      "description": "EA's game launcher replacing Origin.",
+      "tags": ["games", "launcher"]
+    },
+    {
+      "id": "xbox-app",
+      "name": "Xbox App",
+      "wingetId": "9MV0B5HZVK9Z",
+      "category": "gaming",
+      "publisher": "Microsoft",
+      "homepage": "https://www.xbox.com/apps",
+      "description": "Microsoft's gaming hub and Game Pass launcher.",
+      "tags": ["games", "launcher"]
     },
     {
       "id": "playnite",
@@ -387,8 +946,78 @@
       "category": "gaming",
       "publisher": "Playnite",
       "homepage": "https://playnite.link",
-      "description": "Open source video game library manager.",
+      "description": "Open source unified video game library manager.",
       "tags": ["games", "library"]
+    },
+    {
+      "id": "geforce-experience",
+      "name": "GeForce Experience",
+      "wingetId": "Nvidia.GeForceExperience",
+      "category": "gaming",
+      "publisher": "NVIDIA",
+      "homepage": "https://www.nvidia.com/geforce-experience/",
+      "description": "NVIDIA driver and game optimization tool.",
+      "tags": ["games", "drivers"]
+    },
+    {
+      "id": "minecraft-launcher",
+      "name": "Minecraft Launcher",
+      "wingetId": "Mojang.MinecraftLauncher",
+      "category": "gaming",
+      "publisher": "Mojang",
+      "homepage": "https://www.minecraft.net",
+      "description": "Official launcher for Minecraft Java and Bedrock.",
+      "tags": ["games"]
+    },
+    {
+      "id": "prism-launcher",
+      "name": "Prism Launcher",
+      "wingetId": "PrismLauncher.PrismLauncher",
+      "category": "gaming",
+      "publisher": "Prism Launcher",
+      "homepage": "https://prismlauncher.org",
+      "description": "Open-source Minecraft launcher with mod support.",
+      "tags": ["games", "minecraft"]
+    },
+    {
+      "id": "modrinth",
+      "name": "Modrinth App",
+      "wingetId": "ModrinthApp.ModrinthApp",
+      "category": "gaming",
+      "publisher": "Modrinth",
+      "homepage": "https://modrinth.com",
+      "description": "Minecraft mod manager and launcher.",
+      "tags": ["games", "minecraft"]
+    },
+    {
+      "id": "itch-io",
+      "name": "itch.io",
+      "wingetId": "ItchIo.Itch",
+      "category": "gaming",
+      "publisher": "itch.io",
+      "homepage": "https://itch.io",
+      "description": "Indie game store and launcher.",
+      "tags": ["games", "launcher"]
+    },
+    {
+      "id": "heroic-games-launcher",
+      "name": "Heroic Games Launcher",
+      "wingetId": "HeroicGamesLauncher.HeroicGamesLauncher",
+      "category": "gaming",
+      "publisher": "Heroic Games Launcher",
+      "homepage": "https://heroicgameslauncher.com",
+      "description": "Open-source Epic and GOG games launcher.",
+      "tags": ["games", "launcher"]
+    },
+    {
+      "id": "overwolf",
+      "name": "Overwolf",
+      "wingetId": "Overwolf.Overwolf",
+      "category": "gaming",
+      "publisher": "Overwolf",
+      "homepage": "https://www.overwolf.com",
+      "description": "In-game overlay and apps platform.",
+      "tags": ["games", "overlay"]
     },
     {
       "id": "parsec",
@@ -397,7 +1026,7 @@
       "category": "gaming",
       "publisher": "Parsec Cloud",
       "homepage": "https://parsec.app",
-      "description": "Remote game streaming with low latency.",
+      "description": "Low-latency remote game streaming.",
       "tags": ["games", "streaming"]
     },
     {
@@ -411,84 +1040,434 @@
       "tags": ["games", "streaming"]
     },
     {
-      "id": "discord",
-      "name": "Discord",
-      "wingetId": "Discord.Discord",
-      "category": "communication",
-      "publisher": "Discord Inc.",
-      "homepage": "https://discord.com",
-      "description": "Chat and voice platform.",
-      "tags": ["chat"]
+      "id": "nvidia-app",
+      "name": "NVIDIA App",
+      "wingetId": "Nvidia.NvidiaApp",
+      "category": "gaming",
+      "publisher": "NVIDIA",
+      "homepage": "https://www.nvidia.com/app",
+      "description": "Next-gen NVIDIA driver and overlay app.",
+      "tags": ["games", "drivers"]
     },
     {
-      "id": "zoom",
-      "name": "Zoom",
-      "wingetId": "Zoom.Zoom",
-      "category": "communication",
-      "publisher": "Zoom",
-      "homepage": "https://zoom.us",
-      "description": "Video meetings platform.",
-      "tags": ["meetings"]
+      "id": "notion",
+      "name": "Notion",
+      "wingetId": "Notion.Notion",
+      "category": "productivity",
+      "publisher": "Notion Labs",
+      "homepage": "https://www.notion.so",
+      "description": "All-in-one workspace for notes and projects.",
+      "tags": ["notes", "tasks"]
     },
     {
-      "id": "slack",
-      "name": "Slack",
-      "wingetId": "SlackTechnologies.Slack",
-      "category": "communication",
-      "publisher": "Slack",
-      "homepage": "https://slack.com",
-      "description": "Team chat app.",
-      "tags": ["chat"]
+      "id": "obsidian",
+      "name": "Obsidian",
+      "wingetId": "Obsidian.Obsidian",
+      "category": "productivity",
+      "publisher": "Obsidian",
+      "homepage": "https://obsidian.md",
+      "description": "Markdown-based personal knowledge base.",
+      "tags": ["notes"]
     },
     {
-      "id": "teams",
-      "name": "Microsoft Teams",
-      "wingetId": "Microsoft.Teams",
-      "category": "communication",
+      "id": "onenote",
+      "name": "Microsoft OneNote",
+      "wingetId": "Microsoft.OneNote",
+      "category": "productivity",
       "publisher": "Microsoft",
-      "homepage": "https://www.microsoft.com/teams",
-      "description": "Collaboration tool.",
-      "tags": ["meetings"]
+      "homepage": "https://www.microsoft.com/onenote",
+      "description": "Digital notebook for capturing ideas.",
+      "tags": ["notes"]
     },
     {
-      "id": "skype",
-      "name": "Skype",
-      "wingetId": "Microsoft.Skype",
-      "category": "communication",
+      "id": "google-keep",
+      "name": "Google Keep",
+      "wingetId": "9WZDNCRFHVJL",
+      "category": "productivity",
+      "publisher": "Google",
+      "homepage": "https://keep.google.com",
+      "description": "Simple note-taking app by Google.",
+      "tags": ["notes"]
+    },
+    {
+      "id": "trello",
+      "name": "Trello",
+      "wingetId": "Trello.Trello",
+      "category": "productivity",
+      "publisher": "Atlassian",
+      "homepage": "https://trello.com",
+      "description": "Kanban-style task management tool.",
+      "tags": ["tasks"]
+    },
+    {
+      "id": "libreoffice",
+      "name": "LibreOffice",
+      "wingetId": "TheDocumentFoundation.LibreOffice",
+      "category": "productivity",
+      "publisher": "Document Foundation",
+      "homepage": "https://www.libreoffice.org",
+      "description": "Free and open-source office suite.",
+      "tags": ["office"]
+    },
+    {
+      "id": "evernote",
+      "name": "Evernote",
+      "wingetId": "Evernote.Evernote",
+      "category": "productivity",
+      "publisher": "Evernote",
+      "homepage": "https://evernote.com",
+      "description": "Note-taking and organization app.",
+      "tags": ["notes"]
+    },
+    {
+      "id": "clockify",
+      "name": "Clockify",
+      "wingetId": "Clockify.Clockify",
+      "category": "productivity",
+      "publisher": "Clockify",
+      "homepage": "https://clockify.me",
+      "description": "Free time tracking tool for teams.",
+      "tags": ["time", "productivity"]
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "wingetId": "Figma.Figma",
+      "category": "productivity",
+      "publisher": "Figma Inc.",
+      "homepage": "https://www.figma.com",
+      "description": "Collaborative UI/UX design tool.",
+      "tags": ["design", "ui"]
+    },
+    {
+      "id": "wps-office",
+      "name": "WPS Office",
+      "wingetId": "Kingsoft.WPSOffice",
+      "category": "productivity",
+      "publisher": "Kingsoft",
+      "homepage": "https://www.wps.com",
+      "description": "Lightweight Microsoft Office-compatible suite.",
+      "tags": ["office"]
+    },
+    {
+      "id": "typora",
+      "name": "Typora",
+      "wingetId": "Typora.Typora",
+      "category": "productivity",
+      "publisher": "Typora",
+      "homepage": "https://typora.io",
+      "description": "Minimal and elegant Markdown editor.",
+      "tags": ["editor", "markdown"]
+    },
+    {
+      "id": "logseq",
+      "name": "Logseq",
+      "wingetId": "Logseq.Logseq",
+      "category": "productivity",
+      "publisher": "Logseq",
+      "homepage": "https://logseq.com",
+      "description": "Open-source knowledge management tool.",
+      "tags": ["notes"]
+    },
+    {
+      "id": "microsoft-to-do",
+      "name": "Microsoft To Do",
+      "wingetId": "Microsoft.To-Do",
+      "category": "productivity",
       "publisher": "Microsoft",
-      "homepage": "https://www.skype.com",
-      "description": "Calling app.",
-      "tags": ["calls"]
+      "homepage": "https://todo.microsoft.com",
+      "description": "Simple and smart daily task manager.",
+      "tags": ["tasks"]
     },
     {
-      "id": "telegram",
-      "name": "Telegram",
-      "wingetId": "Telegram.TelegramDesktop",
-      "category": "communication",
-      "publisher": "Telegram",
-      "homepage": "https://telegram.org",
-      "description": "Fast and secure messaging app.",
-      "tags": ["chat", "messaging"]
+      "id": "todoist",
+      "name": "Todoist",
+      "wingetId": "Doist.Todoist",
+      "category": "productivity",
+      "publisher": "Doist",
+      "homepage": "https://todoist.com",
+      "description": "Cross-platform task manager.",
+      "tags": ["tasks"]
     },
     {
-      "id": "signal",
-      "name": "Signal",
-      "wingetId": "OpenWhisperSystems.Signal",
-      "category": "communication",
-      "publisher": "Signal Foundation",
-      "homepage": "https://signal.org",
-      "description": "Encrypted private messaging app.",
-      "tags": ["chat", "privacy"]
+      "id": "microsoft-planner",
+      "name": "Microsoft Planner",
+      "wingetId": "9NBLGGH3ZBJQ",
+      "category": "productivity",
+      "publisher": "Microsoft",
+      "homepage": "https://tasks.office.com",
+      "description": "Visual task planning tool from Microsoft 365.",
+      "tags": ["tasks"]
     },
     {
-      "id": "thunderbird",
-      "name": "Thunderbird",
-      "wingetId": "Mozilla.Thunderbird",
-      "category": "communication",
-      "publisher": "Mozilla",
-      "homepage": "https://www.thunderbird.net",
-      "description": "Free email and calendar client.",
-      "tags": ["email", "calendar"]
+      "id": "google-calendar",
+      "name": "Google Calendar",
+      "wingetId": "9WZDNCRFJ3S7",
+      "category": "productivity",
+      "publisher": "Google",
+      "homepage": "https://calendar.google.com",
+      "description": "Google's calendar and scheduling app.",
+      "tags": ["calendar"]
+    },
+    {
+      "id": "powertoys",
+      "name": "PowerToys",
+      "wingetId": "Microsoft.PowerToys",
+      "category": "utilities",
+      "publisher": "Microsoft",
+      "homepage": "https://aka.ms/powertoys",
+      "description": "Windows utilities for power users.",
+      "tags": ["productivity", "windows"]
+    },
+    {
+      "id": "7zip",
+      "name": "7-Zip",
+      "wingetId": "7zip.7zip",
+      "category": "utilities",
+      "publisher": "Igor Pavlov",
+      "homepage": "https://www.7-zip.org",
+      "description": "Fast and free file archiver.",
+      "tags": ["archive"]
+    },
+    {
+      "id": "vlc",
+      "name": "VLC Media Player",
+      "wingetId": "VideoLAN.VLC",
+      "category": "utilities",
+      "publisher": "VideoLAN",
+      "homepage": "https://www.videolan.org/vlc/",
+      "description": "Free and open-source media player.",
+      "tags": ["media", "video"]
+    },
+    {
+      "id": "anydesk",
+      "name": "AnyDesk",
+      "wingetId": "AnyDeskSoftwareGmbH.AnyDesk",
+      "category": "utilities",
+      "publisher": "AnyDesk Software",
+      "homepage": "https://anydesk.com",
+      "description": "Fast remote desktop application.",
+      "tags": ["remote"]
+    },
+    {
+      "id": "windirstat",
+      "name": "WinDirStat",
+      "wingetId": "WinDirStat.WinDirStat",
+      "category": "utilities",
+      "publisher": "WinDirStat",
+      "homepage": "https://windirstat.net",
+      "description": "Disk usage statistics and cleanup tool.",
+      "tags": ["disk", "storage"]
+    },
+    {
+      "id": "treesize",
+      "name": "TreeSize Free",
+      "wingetId": "JAMSoftware.TreeSize.Free",
+      "category": "utilities",
+      "publisher": "JAM Software",
+      "homepage": "https://www.jam-software.com/treesize_free",
+      "description": "Disk space manager and file tree analyzer.",
+      "tags": ["disk", "storage"]
+    },
+    {
+      "id": "hwinfo",
+      "name": "HWiNFO",
+      "wingetId": "REALiX.HWiNFO",
+      "category": "utilities",
+      "publisher": "REALiX",
+      "homepage": "https://www.hwinfo.com",
+      "description": "In-depth hardware analysis and monitoring.",
+      "tags": ["hardware", "monitoring"]
+    },
+    {
+      "id": "rufus",
+      "name": "Rufus",
+      "wingetId": "Rufus.Rufus",
+      "category": "utilities",
+      "publisher": "Rufus",
+      "homepage": "https://rufus.ie",
+      "description": "Create bootable USB drives easily.",
+      "tags": ["usb", "boot"]
+    },
+    {
+      "id": "ventoy",
+      "name": "Ventoy",
+      "wingetId": "Ventoy.Ventoy",
+      "category": "utilities",
+      "publisher": "Ventoy",
+      "homepage": "https://www.ventoy.net",
+      "description": "Multi-ISO bootable USB tool.",
+      "tags": ["usb", "boot"]
+    },
+    {
+      "id": "localsend",
+      "name": "LocalSend",
+      "wingetId": "LocalSend.LocalSend",
+      "category": "utilities",
+      "publisher": "LocalSend",
+      "homepage": "https://localsend.org",
+      "description": "Open-source local file sharing across devices.",
+      "tags": ["file-sharing", "network"]
+    },
+    {
+      "id": "autohotkey",
+      "name": "AutoHotkey",
+      "wingetId": "AutoHotkey.AutoHotkey",
+      "category": "utilities",
+      "publisher": "AutoHotkey Foundation",
+      "homepage": "https://www.autohotkey.com",
+      "description": "Scripting language for Windows automation.",
+      "tags": ["automation"]
+    },
+    {
+      "id": "rainmeter",
+      "name": "Rainmeter",
+      "wingetId": "Rainmeter.Rainmeter",
+      "category": "utilities",
+      "publisher": "Rainmeter",
+      "homepage": "https://www.rainmeter.net",
+      "description": "Desktop customization and widget platform.",
+      "tags": ["customization"]
+    },
+    {
+      "id": "openrgb",
+      "name": "OpenRGB",
+      "wingetId": "CalcProgrammer1.OpenRGB",
+      "category": "utilities",
+      "publisher": "CalcProgrammer1",
+      "homepage": "https://openrgb.org",
+      "description": "Open-source RGB lighting control software.",
+      "tags": ["rgb", "hardware"]
+    },
+    {
+      "id": "signalrgb",
+      "name": "SignalRGB",
+      "wingetId": "WhirlwindFX.SignalRgb",
+      "category": "utilities",
+      "publisher": "WhirlwindFX",
+      "homepage": "https://www.signalrgb.com",
+      "description": "Unified RGB ecosystem and lighting control.",
+      "tags": ["rgb", "hardware"]
+    },
+    {
+      "id": "translucenttb",
+      "name": "TranslucentTB",
+      "wingetId": "9PF4KZ2VN4W9",
+      "category": "utilities",
+      "publisher": "TranslucentTB",
+      "homepage": "https://github.com/TranslucentTB/TranslucentTB",
+      "description": "Make the Windows taskbar translucent.",
+      "tags": ["customization", "windows"]
+    },
+    {
+      "id": "colorpicker",
+      "name": "PowerToys Color Picker",
+      "wingetId": "Microsoft.PowerToys",
+      "category": "utilities",
+      "publisher": "Microsoft",
+      "homepage": "https://aka.ms/powertoys",
+      "description": "System-wide color picker included in PowerToys.",
+      "tags": ["design", "utility"]
+    },
+    {
+      "id": "winrar",
+      "name": "WinRAR",
+      "wingetId": "RARLab.WinRAR",
+      "category": "utilities",
+      "publisher": "RARLab",
+      "homepage": "https://www.win-rar.com",
+      "description": "File archiver supporting RAR and ZIP formats.",
+      "tags": ["archive"]
+    },
+    {
+      "id": "lively-wallpaper",
+      "name": "Lively Wallpaper",
+      "wingetId": "rocksdanister.LivelyWallpaper",
+      "category": "utilities",
+      "publisher": "rocksdanister",
+      "homepage": "https://www.rocksdanister.com/lively/",
+      "description": "Set animated and interactive live wallpapers.",
+      "tags": ["customization"]
+    },
+    {
+      "id": "files",
+      "name": "Files",
+      "wingetId": "9NGHP3DX8HDX",
+      "category": "utilities",
+      "publisher": "Files Community",
+      "homepage": "https://files.community",
+      "description": "Modern file manager for Windows.",
+      "tags": ["files", "explorer"]
+    },
+    {
+      "id": "everything",
+      "name": "Everything",
+      "wingetId": "voidtools.Everything",
+      "category": "utilities",
+      "publisher": "voidtools",
+      "homepage": "https://www.voidtools.com",
+      "description": "Instant file search for Windows.",
+      "tags": ["search", "files"]
+    },
+    {
+      "id": "crystal-disk-info",
+      "name": "CrystalDiskInfo",
+      "wingetId": "CrystalDewWorld.CrystalDiskInfo",
+      "category": "utilities",
+      "publisher": "Crystal Dew World",
+      "homepage": "https://crystalmark.info/en/software/crystaldiskinfo/",
+      "description": "HDD and SSD health monitoring utility.",
+      "tags": ["disk", "hardware"]
+    },
+    {
+      "id": "process-explorer",
+      "name": "Process Explorer",
+      "wingetId": "Microsoft.Sysinternals.ProcessExplorer",
+      "category": "utilities",
+      "publisher": "Microsoft Sysinternals",
+      "homepage": "https://learn.microsoft.com/sysinternals/downloads/process-explorer",
+      "description": "Advanced process monitoring and management.",
+      "tags": ["monitoring", "windows"]
+    },
+    {
+      "id": "autoruns",
+      "name": "Autoruns",
+      "wingetId": "Microsoft.Sysinternals.Autoruns",
+      "category": "utilities",
+      "publisher": "Microsoft Sysinternals",
+      "homepage": "https://learn.microsoft.com/sysinternals/downloads/autoruns",
+      "description": "Manage startup programs and system entries.",
+      "tags": ["startup", "windows"]
+    },
+    {
+      "id": "sharex",
+      "name": "ShareX",
+      "wingetId": "ShareX.ShareX",
+      "category": "utilities",
+      "publisher": "ShareX Team",
+      "homepage": "https://getsharex.com",
+      "description": "Feature-rich screenshot and screen recording tool.",
+      "tags": ["screenshot", "recording"]
+    },
+    {
+      "id": "obs-studio",
+      "name": "OBS Studio",
+      "wingetId": "OBSProject.OBSStudio",
+      "category": "utilities",
+      "publisher": "OBS Project",
+      "homepage": "https://obsproject.com",
+      "description": "Free and open-source streaming and recording software.",
+      "tags": ["streaming", "recording"]
+    },
+    {
+      "id": "snappy-driver-installer",
+      "name": "Snappy Driver Installer Origin",
+      "wingetId": "GlennDelahoy.SnappyDriverInstallerOrigin",
+      "category": "utilities",
+      "publisher": "Glenn Delahoy",
+      "homepage": "https://www.snappy-driver-installer.org",
+      "description": "Offline driver installation and update tool.",
+      "tags": ["drivers", "hardware"]
     }
   ]
 }

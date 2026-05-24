@@ -7,6 +7,7 @@ import {
   Globe,
   House,
   MessageCircle,
+  Wrench,
 } from "lucide-react";
 import { useCatalogStore } from "../stores/useCatalogStore";
 import { CAT_COLORS, DEFAULT_COLOR } from "../stores/catColor";
@@ -23,6 +24,7 @@ function Sidebar() {
     gaming: <Gamepad2 size={18} />,
     productivity: <BriefcaseBusiness size={18} />,
     communication: <MessageCircle size={18} />,
+    utilities: <Wrench size={18} />
   };
 
   const homeItem = { id: "home", label: "Home" };

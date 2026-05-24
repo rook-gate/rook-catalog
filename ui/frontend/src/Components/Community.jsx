@@ -5,7 +5,7 @@ import Cards from "./Cards";
 
 export default function Community() {
   const communityFavorites = [
-     "slack", "discord", "figma", "thunderbird", "tor"
+     "slack", "riot-client", "figma", "localsend", "tor"
   ];
 
   const featuredApps = data.apps.filter((app) =>

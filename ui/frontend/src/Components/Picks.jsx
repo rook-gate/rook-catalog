@@ -5,7 +5,7 @@ import Cards from "./Cards";
 
 export default function Picks() {
   const editorPicks = [
-    "notion", "brave", "steam", "discord", "obsidian", 
+    "notion", "brave", "steam", "discord", "zed", 
   ];
 
   const featuredApps = data.apps.filter((app) =>

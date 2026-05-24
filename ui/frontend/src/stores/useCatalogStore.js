@@ -5,6 +5,8 @@ export const useCatalogStore = create((set) => ({
   activeCategory: "home",
   setActiveCategory: (id) => set({ activeCategory: id }),
 
+  
+
   installingApps: new Set(),
   setInstalling: (id, value) =>
     set((s) => {
