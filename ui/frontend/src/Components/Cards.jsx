@@ -1,11 +1,10 @@
 import React from "react";
-import data from "../assets/mockData.json";
+import data from "../assets/mockData.json"; 
 import { CAT_COLORS, DEFAULT_COLOR } from "../stores/catColor";
 import { useState } from "react";
 import { InstallApp } from "../../wailsjs/go/main/App";
 import { useCatalogStore } from "../stores/useCatalogStore";
 import { ToastContainer, toast } from "react-toastify";
-import icon from "../assets/appicon.png";
 
 export default function Cards({ app }) {
   const domain = app?.homepage ? new URL(app.homepage).hostname : null;
@@ -21,12 +20,18 @@ export default function Cards({ app }) {
     try {
       setInstalling(app.id, true);
       await InstallApp(app.wingetId);
-       toast.success(`${app.name} installed successfully! ↈ`);
+      toast.success(`${app.name} installed successfully! ↈ`, {
+        icon: ({ theme, type }) => <img src={iconUrl} />,
+      });
     } catch (err) {
       console.log("Error:", err);
       if (String(err).includes("Already Install")) {
         toast(`${app.name} Already Installed. `, {
-           icon: ({theme, type}) =>  <img src={icon} />
+          icon: ({ theme, type }) => <img src={iconUrl} />,
+        });
+      } else {
+        toast(`Failed to install ${app.name} `, {
+          icon: ({ theme, type }) => <img src={iconUrl} />,
         });
       }
     } finally {

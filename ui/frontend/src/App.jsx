@@ -1,5 +1,4 @@
-import { useState } from "react";
-import data from "./assets/mockData.json";
+import { useState, useEffect } from "react";
 import "./App.css";
 import Sidebar from "./Components/Sidebar";
 import { useCatalogStore } from "./stores/useCatalogStore";
@@ -11,13 +10,24 @@ import "react-toastify/dist/ReactToastify.css";
 import Home from "./Components/Home";
 
 function App() {
-  const [loadingApp, setLoadingApp] = useState(null);
   const activeCategory = useCatalogStore((s) => s.activeCategory);
-    const isHome = activeCategory === "home";
+  const isHome = activeCategory === "home";
+
   return (
-    
     <div className="h-screen flex flex-col overflow-hidden bg-[#141414]">
-      <ToastContainer position="top-left"  theme="dark"/>
+      <ToastContainer
+        position="top-right"
+        autoClose={1500}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover={false}
+        theme="dark"
+
+      />
       <Navbar />
       <div className="flex flex-1 overflow-hidden overflow-y-auto no-scrollbar ">
         <Sidebar />
@@ -34,10 +44,7 @@ function App() {
                 [7, 4],
               ]}
             />
-            <div className="relative z-10">
-            
-              {isHome ? <Home /> : <Items />}
-            </div>
+            <div className="relative z-10">{isHome ? <Home /> : <Items />}</div>
           </div>
         </div>
       </div>

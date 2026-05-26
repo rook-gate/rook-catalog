@@ -97,7 +97,6 @@
         "battle-net",
         "ubisoft-connect",
         "gog",
-        "riot-client",
         "ea-app",
         "xbox-app",
         "playnite",
@@ -512,7 +511,7 @@
     {
       "id": "zed",
       "name": "Zed",
-      "wingetId": "Zed.Zed",
+      "wingetId": "ZedIndustries.Zed",
       "category": "developer tools",
       "publisher": "Zed Industries",
       "homepage": "https://zed.dev",
@@ -907,16 +906,6 @@
       "publisher": "CD Projekt",
       "homepage": "https://www.gog.com",
       "description": "DRM-free game library manager.",
-      "tags": ["games", "launcher"]
-    },
-    {
-      "id": "riot-client",
-      "name": "Riot Client",
-      "wingetId": "RiotGames.RiotClient",
-      "category": "gaming",
-      "publisher": "Riot Games",
-      "homepage": "https://www.riotgames.com",
-      "description": "Launcher for Riot Games titles.",
       "tags": ["games", "launcher"]
     },
     {
