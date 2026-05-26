@@ -11,5 +11,5 @@ Built with a local-first architecture, Rook Catalog interacts directly with the 
 The interface emphasizes curated discovery through categorized browsing, editor selections, and community-driven recommendations while keeping performance lightweight and native-feeling.
 
 <p align="center">
-  <img src="./assets/preview.png" width="600" />
+  <img src="./assets/v0.1.0-beta.png" width="600" />
 </p>
